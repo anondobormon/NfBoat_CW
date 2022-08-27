@@ -1,0 +1,37 @@
+.hero_slider {
+  display: flex;
+  justify-content: center;
+
+  .h_slider {
+    width: 300px;
+    position: relative;
+    margin-left: 20px;
+
+    .slider_wrapper {
+      position: absolute;
+      top: 95px;
+      right: 17px;
+      z-index: 22223;
+
+      img {
+        width: 270px;
+      }
+    }
+
+    .swiper {
+      margin-top: 105px;
+      width: 280px !important;
+    }
+    .swiper-wrapper {
+      width: 280px !important;
+      margin-left: 15px;
+    }
+
+    .swiper-slide {
+      img {
+        width: 245px !important;
+        border-radius: 20px;
+      }
+    }
+  }
+}

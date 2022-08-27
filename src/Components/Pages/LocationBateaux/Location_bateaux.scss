@@ -1,0 +1,210 @@
+.location_bateaux,
+.recherche_de_ports {
+  .module {
+    background-image: url(../../../Assets/images/bg-landing.jpg);
+    background-color: #0099c2;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+
+    .hero_header {
+      display: flex;
+      align-items: center;
+      min-height: 80vh;
+
+      .content_wrapper {
+        max-width: 532px;
+
+        h2 {
+          font-weight: 500;
+          color: #fff;
+          font-size: 48px;
+          margin-bottom: 14px;
+        }
+        p {
+          color: #fff;
+          max-width: 400px;
+          margin-bottom: 30px;
+          font-weight: 400;
+        }
+
+        button {
+          margin-right: 25px;
+          transition: all 0.3s;
+
+          &:nth-last-child(1) {
+            margin-right: 0px;
+            border: 1px solid white;
+            background: transparent;
+            color: white;
+          }
+
+          &:hover {
+            background-color: white;
+            scale: 0.96;
+            color: #000;
+          }
+        }
+        .button:nth-child(2) {
+        }
+      }
+    }
+  }
+
+  .boat_search-area {
+    text-align: center;
+
+    .search_items {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .item {
+        border: 1px solid white;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: #8d8d91;
+        padding: 31px 18px;
+        box-shadow: 0 3px 20px 0 rgb(8 15 52 / 6%);
+        border-radius: 14px;
+        cursor: pointer;
+        transition: all 0.3s;
+        position: relative;
+
+        p {
+          transition: all 0.3s;
+        }
+
+        .arrow_icon {
+          transition: all 0.3s;
+          transform: rotate(90deg);
+        }
+
+        .details_element {
+          position: absolute;
+          top: 120px;
+          border-radius: 15px;
+          padding: 30px;
+          left: 0;
+          width: 100%;
+          box-shadow: 0 3px 20px 0 rgb(8 15 52 / 6%);
+          opacity: 0;
+          visibility: hidden;
+          display: flex;
+          flex-direction: column;
+          transition: all 0.3s;
+          z-index: 2222;
+          background-color: #fff;
+          a {
+            color: #8d8d91;
+            font-size: 17px;
+            font-weight: 500;
+            cursor: pointer;
+            text-align: left;
+            margin-bottom: 5px;
+            transition: all 0.3s;
+
+            &:hover {
+              color: #0099c2;
+            }
+          }
+        }
+
+        &:hover {
+          color: #0099c2;
+
+          p {
+            color: #0099c2;
+          }
+
+          .arrow_icon {
+            transform: rotate(-90deg);
+          }
+          .details_element {
+            opacity: 1;
+            visibility: visible;
+            top: 110px;
+          }
+        }
+      }
+
+      .button {
+        transition: all 0.3s;
+
+        &:hover {
+          scale: 0.96;
+        }
+      }
+    }
+  }
+
+  .suggestions {
+    text-align: center;
+
+    h3 {
+      font-size: 32px;
+    }
+
+    .desc {
+      max-width: 532px;
+      margin: auto;
+      margin-top: 8px;
+    }
+  }
+  .grid_col_3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .services {
+    h2 {
+      color: #009ac1;
+      font-size: 45px;
+      font-weight: 600;
+      margin-bottom: 16px;
+      text-align: center;
+      line-height: 1.375em;
+    }
+
+    p {
+      max-width: 553px;
+      margin: auto;
+    }
+
+    .grid_col_2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+
+      .service_card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 280px;
+        padding: 32px 34px;
+
+        .card_title {
+          margin: 0;
+          margin-top: 13px;
+          font-weight: 600;
+          font-size: 22px;
+          color: #222223;
+        }
+      }
+    }
+    .learn_more {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      .button {
+        margin: 0 auto;
+      }
+    }
+  }
+}

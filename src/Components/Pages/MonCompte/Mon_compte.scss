@@ -1,0 +1,208 @@
+.mon_compte {
+  .search_area2 {
+    padding: 50px 0;
+    h3 {
+      text-align: center;
+    }
+    form {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border: 1px solid red;
+      max-width: 560px;
+      margin: auto;
+      min-height: 80px;
+      padding: 15px 15px;
+      border-radius: 20px;
+      border: 1px solid white;
+      transition: all 0.3s;
+      box-shadow: 2px 2px 20px 0 rgb(8 15 52 / 6%);
+      margin-top: 15px;
+
+      &:hover {
+        border: 1px solid #0099c2;
+      }
+
+      .button {
+        padding: 12px 20px;
+        font-size: 17px;
+        font-weight: 500;
+        transition: all 0.3s;
+
+        &:hover {
+          scale: 0.96;
+        }
+      }
+
+      .icon_wrapper {
+        display: flex;
+        flex-direction: row-reverse;
+
+        img {
+          opacity: 0.5;
+          transition: all 0.3s;
+        }
+        input {
+          border: none;
+          outline: none;
+          padding: 10px;
+          background: transparent;
+        }
+      }
+
+      input:focus + img {
+        opacity: 1;
+      }
+    }
+  }
+  .grid_col_3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+
+    .account_card {
+      padding: 30px 35px;
+      //   min-height: 220px;
+      border-radius: 24px;
+      background-color: #fff;
+      box-shadow: 0 3px 20px 0 rgb(8 15 52 / 6%);
+      transition: all 0.3s;
+      cursor: pointer;
+
+      .icon_wrapper {
+        img {
+          width: 25px;
+        }
+      }
+      .account_title {
+        font-weight: 600;
+        font-size: 18px;
+        margin-bottom: 10px;
+        transition: all 0.3s;
+      }
+      p {
+        font-size: 16px;
+      }
+
+      &:hover {
+        transform: translateY(-5px);
+
+        .account_title {
+          color: #009ac1;
+        }
+      }
+    }
+  }
+
+  .informations {
+    .title {
+      font-size: 22px;
+      font-weight: 500;
+      margin-bottom: 40px;
+      margin-top: 40px;
+    }
+
+    .info_wrapper {
+      .info_item {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        .left {
+          h6 {
+            margin: 10px 0;
+            color: #000;
+            font-weight: 400;
+            font-size: 19px;
+            margin-top: 15px;
+          }
+          p {
+            font-size: 16px;
+            font-weight: 400;
+            margin-bottom: 15px;
+          }
+        }
+        .right {
+          padding-top: 10px;
+          a {
+            color: #000;
+            font-size: 16px;
+            text-decoration: underline;
+            transition: all 0.3s;
+            font-weight: 600;
+
+            &:hover {
+              color: #009ac1;
+            }
+          }
+        }
+      }
+    }
+  }
+  .privacy_area {
+    h6 {
+      margin: 10px 0;
+      color: #000;
+      font-weight: 400;
+      font-size: 19px;
+      margin-top: 15px;
+    }
+    .checkbox {
+      display: inline-block;
+      width: 38px;
+      height: 18px;
+      margin-top: 1px;
+      margin-right: 0px;
+      margin-left: 0px;
+      border-color: #c1cbd5;
+      border-radius: 20px;
+      background-image: url(../../../Assets/images/Ellipse-2.svg);
+      background-position: 2px 2px;
+      background-size: 12px 12px;
+      background-repeat: no-repeat;
+      cursor: pointer;
+      border: 1px solid #c1cbd5;
+      box-shadow: 0px 0px 3px 1px #3898ec;
+    }
+
+    input {
+      display: none;
+    }
+
+    input:checked + .checked {
+      display: inline-block;
+      width: 38px;
+      height: 18px;
+      margin-top: 1px;
+      margin-right: 0px;
+      margin-left: 0px;
+      border-color: #245fff;
+      background-color: #0099c2;
+      background-image: url(../../../Assets/images/White-Circle.svg);
+      background-repeat: no-repeat;
+      border-radius: 20px;
+      background-position: 90% 2px;
+      background-size: 12px 12px;
+      box-shadow: 0px 0px 3px 1px #3898ec;
+      cursor: pointer;
+    }
+
+    .checkbox-checked-toggle {
+      display: inline-block;
+      width: 38px;
+      height: 18px;
+      margin-top: 1px;
+      margin-right: 0px;
+      margin-left: 0px;
+      border-color: #245fff;
+      background-color: #0099c2;
+      background-image: url(../../../Assets/images/White-Circle.svg);
+      background-repeat: no-repeat;
+      border-radius: 20px;
+      background-position: 90% 3px;
+      background-size: 12px 12px;
+      box-shadow: 0px 0px 3px 1px #3898ec;
+      cursor: pointer;
+    }
+  }
+}

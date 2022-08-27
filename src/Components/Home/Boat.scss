@@ -1,0 +1,52 @@
+.boat {
+  padding: 50px 0;
+
+  .boat_title {
+    margin: 0;
+    color: #009ac1;
+    font-size: 45px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  .grid_col_3 {
+    display: grid;
+    max-width: 1150px;
+    margin: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+
+    .card {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
+      .card_title {
+        margin-top: 15px;
+        margin-bottom: 16px;
+        color: #222223d6;
+        font-size: 19px;
+        font-weight: 700;
+      }
+    }
+  }
+  .demander {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 90px;
+
+    .button {
+      background-color: #000;
+      color: white;
+      transition: 0.3s all;
+
+      &:hover {
+        background-color: #009ac1;
+        scale: 0.96;
+      }
+    }
+  }
+}

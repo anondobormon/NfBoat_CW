@@ -1,0 +1,31 @@
+.sub_header {
+  height: 364px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../../../Assets/images/hero_bg.jpeg);
+  background-repeat: no-repeat;
+  background-position: 60% 100%;
+  background-size: auto;
+  background-attachment: fixed;
+
+  .sub_header_wrapper {
+    max-width: 650px;
+    color: white;
+    text-align: center;
+    padding: 20px;
+
+    h2 {
+      margin-top: 0px;
+      margin-bottom: 14px;
+      font-size: 48px;
+      line-height: 1.25em;
+      font-weight: 700;
+      color: #fff;
+    }
+    p {
+      color: white;
+      font-weight: 500;
+    }
+  }
+}

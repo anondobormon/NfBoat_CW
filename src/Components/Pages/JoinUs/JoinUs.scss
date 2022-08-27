@@ -1,0 +1,22 @@
+.join_us_section {
+  .grid_col_2 {
+    gap: 1rem !important;
+  }
+  .wrapper2 {
+    padding: 68px 51px !important;
+    box-shadow: 0 3px 20px 0 rgb(8 15 52 / 6%);
+
+    h5 {
+      font-weight: 600;
+      font-size: 18px;
+      margin-bottom: 25px;
+      text-align: center;
+    }
+
+    form {
+      .submit {
+        margin-top: 0 !important;
+      }
+    }
+  }
+}

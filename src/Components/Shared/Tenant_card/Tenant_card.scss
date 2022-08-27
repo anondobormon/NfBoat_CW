@@ -1,0 +1,63 @@
+.tenant-card {
+  .grid_col_2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+
+    .card {
+      padding: 88px 65px 92px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      //   margin-bottom: 20px;
+
+      .title {
+        margin: 0;
+        font-weight: 600;
+        font-size: 32px;
+      }
+      .desc {
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 10px;
+      }
+      .button {
+        width: fit-content;
+        transition: 0.3s;
+        background-color: #000;
+        margin-top: 30px;
+
+        &:hover {
+          scale: 0.96;
+          color: white;
+          background-color: #009ac1;
+        }
+      }
+
+      &.left {
+        background-image: url(../../../Assets/images/hero_bg.jpeg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-radius: 30px;
+
+        .title {
+          color: #fff;
+        }
+        .desc {
+          color: #fff;
+        }
+        .button {
+          margin-top: 0;
+          background-color: #009ac1;
+          transition: 0.3s;
+
+          &:hover {
+            background-color: #fff;
+            color: #009ac1;
+          }
+        }
+      }
+    }
+  }
+}

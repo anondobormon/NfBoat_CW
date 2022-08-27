@@ -1,0 +1,29 @@
+.privet_life {
+  .privet_sub_header {
+    height: 354px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f8fb;
+
+    h2 {
+      color: #009ac2;
+      font-size: 68px;
+      font-weight: 600;
+      text-align: center;
+      margin: 0;
+    }
+    p {
+      text-align: center;
+      font-weight: 600;
+      font-size: 30px;
+      font-style: italic;
+      margin: 0;
+      padding: 0;
+    }
+  }
+  .content_wrapper_privet {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+}

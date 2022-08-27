@@ -1,0 +1,213 @@
+.navbar {
+  opacity: 1;
+  transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg)
+    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+  position: sticky;
+  top: 0px;
+  padding: 26px 20px 26px;
+  background-color: rgba(255, 255, 255, 0.98);
+  font-family: Poppins, sans-serif;
+  z-index: 222222222;
+
+  .nav_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+        transition: all 0.2s;
+        cursor: pointer;
+        text-decoration: none;
+      }
+      &:hover {
+        img {
+          scale: 0.97;
+        }
+      }
+    }
+
+    .menu {
+      .menu_items {
+        display: flex;
+        gap: 30px;
+        padding: 0 20px 0 0;
+
+        .menu_item {
+          list-style: none;
+          font-size: 18px;
+          line-height: 1.111em;
+          font-weight: 500;
+
+          &.account {
+            display: none;
+          }
+
+          a {
+            text-decoration: none;
+            color: #222223;
+            transition: color 300ms ease;
+            display: flex;
+            align-items: center;
+
+            span {
+              display: inline-block;
+              margin-left: 8px;
+              font-size: 13px;
+              font-weight: 100;
+              transition: 300ms ease;
+            }
+
+            &:hover {
+              color: #0099c2;
+
+              span {
+                transform: rotate(180deg);
+              }
+            }
+          }
+
+          &.dropdown {
+            position: relative;
+
+            .dropdown_list {
+              position: absolute;
+              top: 60px;
+              box-shadow: 0 3px 20px 0 rgb(8 15 52 / 6%);
+              padding: 64px 66px;
+              left: -80%;
+              z-index: 111;
+              border-radius: 35px;
+              display: flex;
+              gap: 64px;
+              width: 580px;
+              background-color: #fff;
+
+              &.show_dropdown {
+                visibility: hidden;
+                opacity: 0;
+                transition: all 0.3s;
+              }
+
+              .list_items {
+                padding: 0;
+
+                .menu_header {
+                  color: #222223;
+                  font-size: 20px;
+                  line-height: 1.4em;
+                  font-weight: 600;
+                }
+
+                .menu_item {
+                  a {
+                    // width: 100%;
+                    display: inline-block !important;
+                    margin-top: 24px;
+                    font-size: 16px;
+                    color: #8d8d91;
+                    transition: color 300ms ease;
+
+                    &:hover {
+                      color: #0099c2;
+
+                      span {
+                        transform: rotate(180deg);
+                      }
+                    }
+                  }
+                }
+              }
+            }
+
+            &:hover {
+              .show_dropdown {
+                // display: flex;
+                visibility: visible;
+                opacity: 1;
+                top: 50px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .search_area {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+
+      .search {
+        position: relative;
+
+        .search_icon {
+          font-size: 32px;
+          color: #222223;
+          opacity: 0.5;
+          cursor: pointer;
+          transition: all 300ms;
+
+          &:hover {
+            color: #0099c2;
+            scale: 0.9;
+            opacity: 1;
+          }
+        }
+
+        .search_bar {
+          position: absolute;
+          top: 65px;
+          right: -80%;
+          padding: 30px;
+          border: 1px solid blue;
+          border-radius: 30px;
+          background-color: #fff;
+          z-index: 1112;
+          transition: all 0.5s;
+          visibility: hidden;
+
+          &.show_search_bar {
+            top: 65;
+            visibility: visible;
+          }
+
+          form {
+            display: flex;
+            gap: 20px;
+
+            .input {
+              width: 300px;
+            }
+
+            .button {
+              transition: all 0.3s;
+              &:hover {
+                scale: 0.96;
+              }
+            }
+          }
+        }
+      }
+
+      .search_button {
+        button {
+          padding: 16px 26px;
+          background-color: #000;
+          font-size: 16px;
+          transition: 300ms ease;
+
+          &:hover {
+            color: #fff;
+            background-color: #0099c2;
+            scale: 0.96;
+          }
+        }
+      }
+    }
+  }
+}

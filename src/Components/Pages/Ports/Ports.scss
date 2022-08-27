@@ -1,0 +1,55 @@
+.ports {
+  .sub_header_link {
+    h4 {
+      font-size: 22px;
+      font-weight: 600;
+      margin-bottom: 15px;
+    }
+    .comment_wrapper {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+
+      .rating {
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        font-weight: 600;
+
+        img {
+          width: 22px;
+          margin-right: 5px;
+          margin-top: -3px;
+        }
+      }
+
+      .share {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        div {
+          display: flex;
+          align-items: center;
+          gap: 5px;
+
+          p {
+            font-size: 16px;
+            font-weight: 600;
+          }
+
+          img {
+            width: 22px;
+          }
+        }
+      }
+    }
+  }
+  .port_header_img {
+    background-image: url(../../../Assets/images/vue-sur-le-vieux-port-de-marseille.jpeg);
+    background-position: 50% 100%;
+    background-size: cover;
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}

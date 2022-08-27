@@ -1,0 +1,90 @@
+.hero {
+  background-image: url(../../Assets/images/hero_bg.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 50px 0;
+
+  .hero_content {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    height: 65vh;
+    // gap: 100px;
+
+    .left {
+      flex: 2;
+      margin-right: 150px;
+
+      .title {
+        margin-top: 0px;
+        margin-bottom: 14px;
+        color: #222223;
+        font-size: 48px;
+        line-height: 1.25em;
+        font-weight: 600;
+        color: #fff;
+      }
+      p {
+        color: #fff;
+        font-weight: 400;
+        margin-top: 20px;
+      }
+
+      .discover_area {
+        margin-top: 30px;
+        display: flex;
+        gap: 30px;
+        align-items: center;
+
+        .discover {
+          text-decoration: none;
+          font-size: 18px;
+          transition: all 0.3s;
+          font-weight: 500;
+          padding: 18px 40px;
+
+          &:hover {
+            color: #0099c2;
+            scale: 0.95;
+            background-color: white;
+          }
+        }
+        .rent {
+          background-color: transparent;
+          text-decoration: none;
+          font-size: 18px;
+          transition: all 0.3s;
+          font-weight: 500;
+          padding: 18px 40px;
+          border: 1px solid white;
+
+          &:hover {
+            color: #000;
+            background: white;
+            scale: 0.95;
+          }
+        }
+      }
+    }
+    .right {
+      flex: 1.7;
+      width: 500px;
+      overflow: hidden;
+      position: relative;
+      height: 75vh;
+    }
+  }
+
+  .desc {
+    max-width: 560px;
+    text-align: center;
+    margin: 20px auto;
+    color: #8d8d91;
+    font-size: 25px;
+    padding: 0 50px;
+    font-weight: 500;
+    line-height: 1.067em;
+  }
+}

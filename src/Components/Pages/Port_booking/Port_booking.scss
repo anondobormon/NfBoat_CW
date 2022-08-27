@@ -1,0 +1,84 @@
+.port_booking {
+  .booking_header {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h2 {
+      color: #222223;
+      font-size: 32px;
+      line-height: 1.375em;
+      font-weight: 600;
+    }
+
+    .search {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 80px;
+      padding: 15px 15px;
+      border-radius: 20px;
+      border: 1px solid white;
+      transition: all 0.3s;
+      box-shadow: 2px 2px 20px 0 rgb(8 15 52 / 6%);
+      overflow: hidden;
+
+      &:hover {
+        border: 1px solid #0099c2;
+      }
+
+      .button {
+        padding: 12px 20px;
+        font-size: 17px;
+        font-weight: 500;
+        transition: all 0.3s;
+
+        &:hover {
+          scale: 0.96;
+        }
+      }
+
+      .icon_wrapper {
+        display: flex;
+        flex-direction: row-reverse;
+
+        img {
+          opacity: 0.5;
+          transition: all 0.3s;
+        }
+        input {
+          border: none;
+          outline: none;
+          padding: 10px;
+          background: transparent;
+        }
+      }
+
+      input:focus + img {
+        opacity: 1;
+      }
+    }
+  }
+
+  .suggestions {
+    text-align: center;
+
+    h3 {
+      font-size: 32px;
+    }
+
+    .desc {
+      max-width: 532px;
+      margin: auto;
+      margin-top: 8px;
+    }
+  }
+  .grid_col_3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    width: 100%;
+  }
+}

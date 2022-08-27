@@ -1,0 +1,99 @@
+.checkout {
+  .checkout_form {
+    gap: 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+
+    .customer_info_title,
+    .order_summery_title {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 35px;
+
+      h4 {
+        margin-top: 0px;
+        margin-bottom: 16px;
+        color: #222223;
+        font-size: 20px;
+        line-height: 1.4em;
+        font-weight: 600;
+      }
+      h5 {
+        font-size: 18px;
+        line-height: 1.667em;
+        font-weight: 500;
+        color: rgba(255, 0, 0, 0.718);
+      }
+    }
+
+    .left {
+      flex: 2.8;
+      .block {
+        box-shadow: 0 3px 20px 0 rgb(8 15 52 / 6%);
+        padding: 32px 34px 44px;
+        margin-bottom: 40px;
+        border-radius: 24px;
+      }
+
+      .address {
+        display: flex;
+        gap: 15px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .input {
+          max-width: 230px;
+        }
+      }
+    }
+    .right {
+      flex: 1;
+      width: 100%;
+      box-shadow: 0 3px 20px 0 rgb(8 15 52 / 6%);
+      padding: 32px 34px 44px;
+      margin-bottom: 40px;
+      border-radius: 24px;
+      position: sticky;
+      top: 100px;
+      //   max-width: 300px;
+
+      h5 {
+        color: #8d8d91;
+        font-weight: 500;
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+
+      .button {
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 30px;
+        padding: 16px 40px;
+        background-color: #000;
+        color: white;
+        transition: 0.3s;
+
+        &:hover {
+          background-color: #0099c2;
+          scale: 0.96;
+        }
+      }
+
+      .apply {
+        color: #000;
+        background-color: #fff;
+        box-shadow: 0 3px 20px 0 rgb(8 15 52 / 6%);
+        transition: 0.3s;
+
+        &:hover {
+          color: white;
+          background-color: #f85757;
+        }
+      }
+    }
+  }
+}

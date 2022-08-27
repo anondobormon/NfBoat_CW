@@ -1,0 +1,29 @@
+.sub_header_link {
+  ul {
+    display: flex;
+    padding: 0;
+    gap: 10px;
+    align-items: center;
+
+    li {
+      list-style: none;
+      font-weight: 500;
+      font-size: 18px;
+
+      a {
+        text-decoration: none;
+        color: #000;
+        transition: all 0.3s;
+        text-transform: capitalize;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+      span {
+        font-size: 12px;
+        margin-left: 5px;
+      }
+    }
+  }
+}
