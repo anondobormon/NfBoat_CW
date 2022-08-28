@@ -1,0 +1,88 @@
+.comming_soon_slider {
+  .slider_module {
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    .left {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      h2 {
+        font-size: 55px;
+        font-weight: 600;
+      }
+    }
+    .right {
+      position: relative;
+      width: 550px;
+      height: 775px;
+      margin-right: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .iphone_hand {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 25555;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      .swiper {
+        max-width: 250px;
+        // height: 350px;
+        position: absolute;
+        top: 25px;
+        left: 73px;
+        width: 100%;
+        // height: 100%;
+      }
+      .swiper-slide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .swiper-button-next,
+      .swiper-button-prev {
+        color: #000000;
+      }
+      .wallet_card {
+        width: 250px;
+        img {
+          width: 100%;
+          border-radius: 30px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .comming_soon_slider {
+    .slider_module {
+      grid-template-columns: 1fr;
+
+      .left {
+        align-items: flex-start;
+        max-width: 450px;
+
+        h2 {
+          font-size: 40px;
+        }
+      }
+
+      .right {
+        margin-top: 20px;
+        margin-right: 0;
+        margin: 20px auto 0 auto;
+      }
+    }
+  }
+}

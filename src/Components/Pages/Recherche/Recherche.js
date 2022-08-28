@@ -138,9 +138,8 @@ export default function Recherche() {
 
         <div className="space100"></div>
         <hr />
-
-        <Footer />
       </div>
+      <Footer />
       <div
         style={{ visibility: `${showModal ? "visible" : "hidden"}` }}
         className="filter_modal"

@@ -4,7 +4,7 @@ import "./HeroSlider.scss";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
-import { Autoplay, EffectFade } from "swiper";
+import { Autoplay } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
 import { images } from "../../Assets/Assets";
@@ -24,7 +24,7 @@ export default function HeroSlider() {
             delay: 2500,
             disableOnInteraction: false,
           }}
-          modules={[EffectFade, Autoplay]}
+          modules={[Autoplay]}
           className="mySwiper"
         >
           <SwiperSlide>

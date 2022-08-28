@@ -138,10 +138,9 @@ export default function Recherche_de_ports() {
         </div>
 
         <div className="space100"></div>
-        <hr />
-
-        <Footer />
       </div>
+      <hr />
+      <Footer />
       <div
         style={{ visibility: `${showModal ? "visible" : "hidden"}` }}
         className="filter_modal"

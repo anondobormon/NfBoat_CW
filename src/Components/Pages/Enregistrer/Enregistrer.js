@@ -16,7 +16,7 @@ export default function Enregistrer() {
         </div>
         <div className="space100"></div>
         <div className="grid_col_2">
-          <div className="wrapper">
+          <div className="wrapper wrapper_1">
             <div>
               <div className="icon_wrapper">
                 <img src={images.Group_597} alt="" />

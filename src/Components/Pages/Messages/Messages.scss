@@ -168,3 +168,36 @@
     }
   }
 }
+
+@media screen and (max-width: 992px) {
+  .message_container {
+    flex-direction: column;
+
+    .title {
+      font-size: 15px !important;
+    }
+
+    .left {
+      .profiles {
+        display: flex;
+        flex-direction: row !important;
+
+        .profile {
+          max-width: 220px;
+          flex-direction: column !important;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+
+          .profile_details {
+            padding-right: 0 !important;
+          }
+        }
+      }
+    }
+
+    .right {
+      height: 50%;
+    }
+  }
+}

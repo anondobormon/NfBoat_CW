@@ -88,7 +88,7 @@ export default function DetailsProduct() {
           </div>
         </div>
 
-        <div className="space175"></div>
+        <div className="space125"></div>
         <hr />
         <Footer />
       </div>

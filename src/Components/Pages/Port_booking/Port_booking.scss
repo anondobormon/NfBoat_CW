@@ -82,3 +82,21 @@
     width: 100%;
   }
 }
+@media screen and (max-width: 992px) {
+  .port_booking {
+    .booking_header {
+      flex-direction: column;
+    }
+
+    .grid_col_3 {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+@media screen and (max-width: 758px) {
+  .port_booking {
+    .grid_col_3 {
+      grid-template-columns: 1fr;
+    }
+  }
+}

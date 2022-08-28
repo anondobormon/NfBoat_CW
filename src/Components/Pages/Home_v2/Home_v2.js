@@ -85,7 +85,7 @@ export default function Home_v2() {
             </div>
 
             <div className="content_section">
-              <h4>Caractéristiques</h4>
+              <h4>Avis</h4>
 
               <div className="notice_cards">
                 <div className="notice_card">
@@ -174,12 +174,15 @@ export default function Home_v2() {
 
             <div className="content_section">
               <h4>Dates</h4>
-
-              <img src={images.Calender} alt="" />
+              <div className="img_wrapper">
+                <img src={images.Calender} alt="" />
+              </div>
             </div>
             <div className="content_section">
               <h4>Emplacement sur la carte</h4>
-              <img src={images.Map} alt="" />
+              <div className="img_wrapper">
+                <img src={images.Map} alt="" />
+              </div>
             </div>
 
             <div className="content_section">

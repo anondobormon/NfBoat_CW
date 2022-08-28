@@ -117,12 +117,15 @@ export default function Ports() {
 
               <div className="content_section">
                 <h4>Dates</h4>
-
-                <img src={images.Calender} alt="" />
+                <div className="image_wrapper">
+                  <img src={images.Calender} alt="" />
+                </div>
               </div>
               <div className="content_section">
                 <h4>Emplacement sur la carte</h4>
-                <img src={images.Map} alt="" />
+                <div className="image_wrapper">
+                  <img src={images.Map} alt="" />
+                </div>
               </div>
 
               <div className="content_section">

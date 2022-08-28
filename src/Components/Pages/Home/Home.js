@@ -1,5 +1,6 @@
 import React from "react";
 import Boat from "../../Home/Boat";
+import Comming_Soon_Slider from "../../Home/Comming_Soon_Slider/Comming_Soon_Slider";
 import Hero from "../../Home/Hero";
 import Footer from "../../Layout/Footer/Footer";
 import Navbar from "../../Layout/Navbar/Navbar";
@@ -11,6 +12,10 @@ export default function Home() {
       <Navbar />
       <Hero />
       <Boat />
+
+      <Comming_Soon_Slider />
+
+      <hr />
       <Footer />
     </div>
   );

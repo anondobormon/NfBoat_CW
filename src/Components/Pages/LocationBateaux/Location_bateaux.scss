@@ -58,7 +58,9 @@
     .search_items {
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
 
       .item {
         border: 1px solid white;
@@ -66,7 +68,7 @@
         align-items: center;
         gap: 10px;
         color: #8d8d91;
-        padding: 31px 18px;
+        padding: 25px 18px;
         box-shadow: 0 3px 20px 0 rgb(8 15 52 / 6%);
         border-radius: 14px;
         cursor: pointer;
@@ -114,6 +116,7 @@
 
         &:hover {
           color: #0099c2;
+          border: 1px solid #0099c2;
 
           p {
             color: #0099c2;
@@ -205,6 +208,21 @@
       .button {
         margin: 0 auto;
       }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .location_bateaux {
+    .grid_col_3 {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+@media screen and (max-width: 758px) {
+  .location_bateaux {
+    .grid_col_3 {
+      grid-template-columns: 1fr;
     }
   }
 }

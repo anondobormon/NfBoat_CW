@@ -57,3 +57,18 @@
     }
   }
 }
+
+@media screen and (max-width: 992px) {
+  .checkbox_area {
+    .checkbox_wrapper {
+      // grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+@media screen and (max-width: 758px) {
+  .checkbox_area {
+    .checkbox_wrapper {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}

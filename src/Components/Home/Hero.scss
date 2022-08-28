@@ -88,3 +88,19 @@
     line-height: 1.067em;
   }
 }
+
+@media screen and (max-width: 992px) {
+  .hero {
+    .hero_content {
+      height: 80vh;
+
+      .left {
+        width: 100%;
+        margin-right: 0;
+      }
+      .right {
+        display: none;
+      }
+    }
+  }
+}

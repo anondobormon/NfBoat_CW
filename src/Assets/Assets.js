@@ -1,8 +1,10 @@
 import City_image from "./images/49004a7cccff565b0a8848ef98cb5818.jpeg";
 import Wallet from "./images/5174894-2.jpg";
+import IPhoneX_hand from "./images/61b3e2d2867067cd5a9bb75c_Hand-iPhoneX.png";
 import Icons_cloud from "./images/akar-icons_cloud-upload-2.png";
 import Cross_Icon from "./images/akar-icons_cross-1.svg";
 import akar_icons_eye from "./images/akar-icons_eye-open.png";
+import akar_icons_share from "./images/akar-icons_share-box.svg";
 import Android_icon from "./images/Android-Icon.svg";
 import Heart_filled from "./images/ant-design_heart-filled.svg";
 import Star_filled from "./images/ant-design_star-filled.svg";
@@ -10,6 +12,8 @@ import Apple_icon from "./images/Apple-Icon.svg";
 import Star from "./images/bxs_star.svg";
 import bx_id_card from "./images/bx_id-card.png";
 import Bx_store from "./images/bx_store.svg";
+import carbon_character from "./images/carbon_character-whole-number.svg";
+import carbon_document from "./images/carbon_document-add-1.png";
 import Setting_icon from "./images/carbon_settings-adjust-2.svg";
 import charm_shield from "./images/charm_shield-tick-1.png";
 import Cli_wc from "./images/cil_wc.svg";
@@ -17,6 +21,7 @@ import ci_notification from "./images/ci_notification-outline-dot.png";
 import Share from "./images/ci_share.svg";
 import Clarity_contract_solid from "./images/clarity_contract-solid.png";
 import Entypo_wallet from "./images/entypo_wallet.png";
+import eye from "./images/eye.svg";
 import Boat5 from "./images/fa-solid_file-contract.png";
 import Shower_solid_main from "./images/fa-solid_shower.svg";
 import Power_solid from "./images/fa6-solid_power-off-2.svg";
@@ -33,6 +38,9 @@ import Group_553 from "./images/Group-553-1.png";
 import Group_597 from "./images/Group-597.png";
 import Group_598 from "./images/Group-598.png";
 import Group_599 from "./images/Group-599.png";
+import Group_600 from "./images/Group-600.svg";
+import healthicons_no from "./images/healthicons_no-outline.svg";
+import healthicons_yes from "./images/healthicons_yes-outline.svg";
 import Message_icon from "./images/icon-1-split-newsletter-realtor-template.svg";
 import Filter_icon from "./images/icon-4-filters-realtor-template.svg";
 import Location from "./images/icon-address-property-realtor-template.svg";
@@ -52,6 +60,7 @@ import ion_cash from "./images/ion_cash-outline.png";
 import Logo from "./images/Logo.png";
 import lucide_settings from "./images/lucide_settings-2.png";
 import Maki_fuel from "./images/maki_fuel.svg";
+import maki_police from "./images/maki_police-1.png";
 import Boat6 from "./images/maki_police.png";
 import Tie_head from "./images/mdi_account-tie-hat.svg";
 import Boat1 from "./images/mdi_sail-boat-1.png";
@@ -64,14 +73,17 @@ import Rectangle_516 from "./images/Rectangle-516.jpg";
 import Rectangle_517_1 from "./images/Rectangle-517-1.jpg";
 import Rectangle_517_2 from "./images/Rectangle-517-2.jpg";
 import Rectangle_517 from "./images/Rectangle-517.jpg";
+import ri_safe from "./images/ri_safe-2-line.svg";
 import Map from "./images/Sans-titre.jpg";
 import Calender from "./images/Sans-titre_1.jpg";
 import Slide1 from "./images/slide-1.jpg";
 import Slide2 from "./images/slide-2.jpg";
 import Slide3 from "./images/slide-3.png";
 import SliderWrapper from "./images/slider_wrapper1.png";
+import uil_bill from "./images/uil_bill.svg";
 import Unnamed from "./images/unnamed.jpg";
 import Filter_icon2 from "./images/Vector-2.png";
+
 import Slider_img_1 from "./images/Zodiac-NZo-680-BlackTube_Terracotta_10.jpeg";
 
 export const images = {
@@ -84,6 +96,17 @@ export const images = {
   Rectangle_516_1: Rectangle_516_1,
   Rectangle_516_2: Rectangle_516_2,
   Rectangle_516_3: Rectangle_516_3,
+  Group_600: Group_600,
+  IPhoneX_hand: IPhoneX_hand,
+  healthicons_no: healthicons_no,
+  healthicons_yes: healthicons_yes,
+  maki_police: maki_police,
+  carbon_document: carbon_document,
+  eye: eye,
+  uil_bill: uil_bill,
+  ri_safe: ri_safe,
+  carbon_character: carbon_character,
+  akar_icons_share: akar_icons_share,
   Setting_icon: Setting_icon,
   Group_1655: Group_1655,
   slide1: Slide1,

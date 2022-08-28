@@ -9,9 +9,6 @@
 
   .left {
     width: 100%;
-    // max-width: 390px;
-    height: 225px;
-    border-radius: 20px;
     position: relative;
     overflow: hidden;
     display: flex;
@@ -32,10 +29,18 @@
       line-height: 1.375em;
       font-weight: 700;
     }
+    .image_wrapper {
+      width: 100%;
+      border-radius: 20px;
+    }
+    .ship_image_wrapper {
+      width: 100%;
+      overflow: hidden;
 
-    img {
-      height: 285px;
-      transition: all 0.3s;
+      img {
+        width: 100%;
+        transition: all 0.3s;
+      }
     }
   }
 

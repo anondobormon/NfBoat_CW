@@ -7,7 +7,9 @@ export default function Ship_card({ data }) {
     <div className="ship_card">
       <div className="left">
         <div className="image_wrapper">
-          <img src={data.img} alt="" />
+          <div className="ship_image_wrapper">
+            <img src={data.img} alt="" />
+          </div>
           <div className="sale_button">{data.what_for}</div>
         </div>
       </div>

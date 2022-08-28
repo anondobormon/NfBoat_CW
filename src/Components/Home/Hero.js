@@ -30,11 +30,6 @@ export default function Hero() {
             <HeroSlider />
           </div>
         </div>
-
-        <div className="desc">
-          Stockez tous les documents administratifs de votre bateau dans un
-          coffre fort numérique grâce à la NFCard
-        </div>
       </div>
     </div>
   );

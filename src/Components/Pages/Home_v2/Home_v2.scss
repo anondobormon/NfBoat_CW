@@ -77,8 +77,11 @@
       .content_section {
         padding: 20px 0;
 
-        img {
-          max-width: 700px;
+        .img_wrapper {
+          max-width: 100%;
+          img {
+            width: 100%;
+          }
         }
 
         h4 {
@@ -102,6 +105,8 @@
           padding: 10px 0 30px 0;
           overflow-y: scroll;
           overflow-x: scroll;
+          flex-wrap: wrap;
+          // justify-content: space-between;
 
           .features_card {
             padding: 20px;
@@ -364,6 +369,42 @@
       &.swiper-button-prev:after,
       .swiper-rtl .swiper-button-next:after {
         color: #fff;
+      }
+    }
+  }
+}
+@media screen and (max-width: 992px) {
+  .home_v2 {
+    .sub_header_link {
+      display: block;
+    }
+
+    .module {
+      flex-direction: column;
+
+      .left {
+        width: 100%;
+        padding-right: 0;
+
+        .header_flex {
+          h3 {
+            font-size: 22px;
+          }
+        }
+
+        .equipment_cards {
+          justify-content: space-between;
+        }
+
+        .notice_cards {
+          .notice_card {
+            width: 100% !important;
+          }
+        }
+      }
+
+      .right {
+        width: 100%;
       }
     }
   }

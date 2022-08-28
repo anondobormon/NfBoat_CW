@@ -75,10 +75,22 @@
         line-height: 1;
         margin-top: 20px;
         transition: 0.3s;
+        padding: 20px 40px;
 
         &:hover {
           scale: 0.96;
         }
+      }
+    }
+  }
+}
+@media screen and (max-width: 992px) {
+  .details_product {
+    .product_wrapper {
+      flex-direction: column;
+
+      .button {
+        width: 100%;
       }
     }
   }

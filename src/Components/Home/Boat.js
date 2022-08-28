@@ -54,9 +54,7 @@ export default function Boat() {
 
         <div className="space200"></div>
 
-        <div className="container">
-          <Tenant_card />
-        </div>
+        <Tenant_card />
       </div>
     </div>
   );

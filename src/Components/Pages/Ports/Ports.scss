@@ -45,11 +45,43 @@
       }
     }
   }
+
+  .content_section {
+    .image_wrapper {
+      width: 100%;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
   .port_header_img {
     background-image: url(../../../Assets/images/vue-sur-le-vieux-port-de-marseille.jpeg);
     background-position: 50% 100%;
     background-size: cover;
     background-attachment: scroll;
     min-height: 400px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .ports {
+    .sub_header_link {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .module {
+      flex-direction: column;
+
+      .left {
+        padding-right: 0;
+      }
+      .right {
+        width: 100%;
+      }
+    }
   }
 }

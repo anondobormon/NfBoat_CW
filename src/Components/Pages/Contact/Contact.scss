@@ -169,3 +169,62 @@
     }
   }
 }
+@media screen and (max-width: 992px) {
+  .contact {
+    .sub_header {
+      height: 100%;
+
+      .sub_header_wrapper {
+        width: 366px;
+      }
+      .contact_card {
+        flex-direction: column;
+      }
+    }
+
+    .message {
+      grid-template-columns: 1fr;
+
+      .left {
+        border: 1px solid red;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .right {
+        padding: 0 0px;
+      }
+    }
+    .faq_section {
+      .faq-header {
+        text-align: center;
+
+        h2 {
+          margin-top: 0px;
+          margin-bottom: 16px;
+          color: #222223;
+          font-size: 32px;
+          line-height: 1.375em;
+          font-weight: 700;
+        }
+        p {
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .contact {
+    .contact_card {
+    }
+    .message {
+      .right {
+        .block {
+          flex-direction: column;
+        }
+      }
+    }
+  }
+}

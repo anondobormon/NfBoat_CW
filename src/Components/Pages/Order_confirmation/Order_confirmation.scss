@@ -83,3 +83,33 @@
     }
   }
 }
+
+@media screen and (max-width: 992px) {
+  .order_confirmation {
+    .client_info {
+      flex-direction: column;
+
+      .wrapper_left {
+        width: 100%;
+      }
+
+      .wrapper_right {
+        width: 100%;
+      }
+    }
+  }
+}
+@media screen and (max-width: 758px) {
+  .order_confirmation {
+    .client_info {
+      .wrapper_left {
+        width: 100%;
+
+        .module {
+          flex-direction: column;
+          width: 100%;
+        }
+      }
+    }
+  }
+}

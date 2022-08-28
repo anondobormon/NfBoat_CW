@@ -105,3 +105,33 @@
     }
   }
 }
+
+@media screen and (max-width: 992px) {
+  .enregistrer,
+  .join-us,
+  .publier_une_annonce {
+    .grid_col_2 {
+      grid-template-columns: 1fr;
+
+      .wrapper_1 {
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .enregistrer,
+  .join-us,
+  .publier_une_annonce {
+    .grid_col_2 {
+      .wrapper {
+        form {
+          .block {
+            grid-template-columns: 1fr;
+          }
+        }
+      }
+    }
+  }
+}

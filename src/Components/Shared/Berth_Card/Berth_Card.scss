@@ -12,15 +12,22 @@
     // max-width: 390px;
     height: 225px;
     border-radius: 20px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
     position: relative;
     overflow: hidden;
     display: flex;
     align-items: flex-start;
     transition: all 0.3s;
 
-    img {
-      height: 285px;
-      transition: all 0.3s;
+    .image_wrapper {
+      width: 100%;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        transition: all 0.3s;
+      }
     }
   }
 
@@ -30,7 +37,7 @@
     text-align: left;
 
     h3 {
-      font-size: 22px;
+      font-size: 22px !important;
       margin-bottom: 15px;
     }
     h4 {

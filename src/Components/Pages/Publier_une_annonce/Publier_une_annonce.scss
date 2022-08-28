@@ -1,7 +1,7 @@
 .publier_une_annonce {
   .grid_col_2 {
     .wrapper2 {
-      padding: 68px 51px 68px 0 !important;
+      padding: 68px 51px 68px 68px !important;
       box-shadow: 0 3px 20px 0 rgb(8 15 52 / 6%);
       .block {
         justify-content: space-between;
@@ -14,6 +14,16 @@
         img {
           margin-bottom: 20px;
         }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .publier_une_annonce {
+    .grid_col_2 {
+      .wrapper2 {
+        padding: 30px 30px 40px 30px !important;
       }
     }
   }

@@ -61,3 +61,10 @@
     }
   }
 }
+@media screen and (max-width: 992px) {
+  .tenant-card {
+    .grid_col_2 {
+      grid-template-columns: 1fr;
+    }
+  }
+}

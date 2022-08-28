@@ -114,3 +114,32 @@
     }
   }
 }
+
+@media screen and (max-width: 992px) {
+  .paypal_checkout {
+    .paypal_info {
+      flex-direction: column;
+
+      .wrapper_left {
+        width: 100%;
+      }
+
+      .wrapper_right {
+        width: 100%;
+      }
+    }
+  }
+}
+@media screen and (max-width: 758px) {
+  .paypal_checkout {
+    .paypal_info {
+      .wrapper_left {
+        width: 100%;
+
+        .module {
+          flex-direction: column;
+        }
+      }
+    }
+  }
+}

@@ -24,6 +24,7 @@ import Recherche from "../Pages/Recherche/Recherche";
 import Recherche_de_ports from "../Pages/Recherche_de_ports/Recherche_de_ports";
 import Search from "../Pages/Search/Search";
 import Termes_conditions from "../Pages/Termes_conditions/Termes_conditions";
+import Wallet from "../Pages/Wallet/Wallet";
 import Wallet_nfcard from "./Wallet_nfcard";
 
 export default function Router() {
@@ -57,6 +58,7 @@ export default function Router() {
       <Route path="/search" element={<Search />} />
       <Route path="/termes-conditions" element={<Termes_conditions />} />
       <Route path="/wallet-nfcard" element={<Wallet_nfcard />} />
+      <Route path="/wallet" element={<Wallet />} />
     </Routes>
   );
 }
