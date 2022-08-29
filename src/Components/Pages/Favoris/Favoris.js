@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Fade } from "react-reveal";
 import { Link } from "react-router-dom";
 import { images } from "../../../Assets/Assets";
 import Footer from "../../Layout/Footer/Footer";
@@ -18,27 +19,33 @@ export default function Favoris() {
       <div className="container-1179px">
         <div className="toggle_wrapper">
           <div className="toggle_two_btn">
-            <button
-              onClick={() => setToggle("locations")}
-              className={`button ${toggle === "locations" && "active"}`}
-            >
-              Locations
-            </button>
-            <button
-              onClick={() => setToggle("port")}
-              className={`button ${toggle === "port" && "active"}`}
-            >
-              Ports
-            </button>
+            <Fade bottom>
+              <button
+                onClick={() => setToggle("locations")}
+                className={`button ${toggle === "locations" && "active"}`}
+              >
+                Locations
+              </button>
+            </Fade>
+            <Fade bottom delay={100}>
+              <button
+                onClick={() => setToggle("port")}
+                className={`button ${toggle === "port" && "active"}`}
+              >
+                Ports
+              </button>
+            </Fade>
           </div>
         </div>
 
         <div className="space75"></div>
 
-        <div className="card_title">
-          <img src={images.Heart_filled} alt="" />
-          <Link to="/favoris">Mes bateaux favoris</Link>
-        </div>
+        <Fade bottom>
+          <div className="card_title">
+            <img src={images.Heart_filled} alt="" />
+            <Link to="/favoris">Mes bateaux favoris</Link>
+          </div>
+        </Fade>
 
         {toggle === "locations" ? <Location_card /> : <Port_card />}
       </div>

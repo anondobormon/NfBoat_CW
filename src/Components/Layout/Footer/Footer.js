@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Fade from "react-reveal/Fade";
 import { images } from "../../../Assets/Assets";
 import "./Footer.scss";
 
@@ -6,7 +7,7 @@ export default function Footer() {
   const [opacity, setOpacity] = useState(false);
 
   return (
-    <div>
+    <Fade>
       <div className="footer">
         <div className="container">
           <div className="top">
@@ -115,6 +116,6 @@ export default function Footer() {
           </div>
         </div>
       </div>
-    </div>
+    </Fade>
   );
 }

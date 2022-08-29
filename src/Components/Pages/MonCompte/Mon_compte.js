@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Fade } from "react-reveal";
 import { Link } from "react-router-dom";
 import { images } from "../../../Assets/Assets";
 import Footer from "../../Layout/Footer/Footer";
@@ -14,15 +15,19 @@ export default function Mon_compte() {
 
         <div className="container">
           <div className="search_area2">
-            <h3>Mon compte</h3>
-            <form className="search">
-              <div className="icon_wrapper">
-                <input type="text" placeholder="Rechercher un sujet" />
-                <img src={images.Filter_icon} alt="" />
-              </div>
+            <Fade bottom>
+              <h3>Mon compte</h3>
+            </Fade>
+            <Fade bottom delay={100}>
+              <form className="search">
+                <div className="icon_wrapper">
+                  <input type="text" placeholder="Rechercher un sujet" />
+                  <img src={images.Filter_icon} alt="" />
+                </div>
 
-              <button className="button">Recherche</button>
-            </form>
+                <button className="button">Recherche</button>
+              </form>
+            </Fade>
           </div>
 
           {toggle === "cards" && (
@@ -171,83 +176,87 @@ export default function Mon_compte() {
 
 function Privacy({ title, data, setToggle }) {
   return (
-    <div className="container-medium-712px">
-      <div className="informations">
-        <div className="sub_header_link">
-          <ul>
-            <li>
-              <Link onClick={() => setToggle("cards")} to={`/mon-compte`}>
-                Mon compte
-              </Link>{" "}
-              <span>
-                <i class="fa-solid fa-chevron-right"></i>
-              </span>
-            </li>
+    <Fade>
+      <div className="container-medium-712px">
+        <div className="informations">
+          <div className="sub_header_link">
+            <ul>
+              <li>
+                <Link onClick={() => setToggle("cards")} to={`/mon-compte`}>
+                  Mon compte
+                </Link>{" "}
+                <span>
+                  <i class="fa-solid fa-chevron-right"></i>
+                </span>
+              </li>
 
-            <li>
-              <Link to="/">{title}</Link>
-            </li>
-          </ul>
-        </div>
-
-        <h4 className="title">{title}</h4>
-        {data.map((item, i) => (
-          <div key={i} className="info_wrapper">
-            <form className="info_item">
-              <label className="privacy_area">
-                <h6>{item.title}</h6>
-                <input type="checkbox" name="Garden-2" id="Garden-2" />
-                <div className="checkbox checked"></div>
-              </label>
-            </form>
-            <hr />
+              <li>
+                <Link to="/">{title}</Link>
+              </li>
+            </ul>
           </div>
-        ))}
+
+          <h4 className="title">{title}</h4>
+          {data.map((item, i) => (
+            <div key={i} className="info_wrapper">
+              <form className="info_item">
+                <label className="privacy_area">
+                  <h6>{item.title}</h6>
+                  <input type="checkbox" name="Garden-2" id="Garden-2" />
+                  <div className="checkbox checked"></div>
+                </label>
+              </form>
+              <hr />
+            </div>
+          ))}
+        </div>
       </div>
-    </div>
+    </Fade>
   );
 }
 function Information({ title, data, setToggle }) {
   return (
-    <div className="container-medium-712px">
-      <div className="informations">
-        <div className="sub_header_link">
-          <ul>
-            <li>
-              <Link onClick={() => setToggle("cards")} to={`/mon-compte`}>
-                Mon compte
-              </Link>{" "}
-              <span>
-                <i class="fa-solid fa-chevron-right"></i>
-              </span>
-            </li>
+    <Fade>
+      <div className="container-medium-712px">
+        <div className="informations">
+          <div className="sub_header_link">
+            <ul>
+              <li>
+                <Link onClick={() => setToggle("cards")} to={`/mon-compte`}>
+                  Mon compte
+                </Link>{" "}
+                <span>
+                  <i class="fa-solid fa-chevron-right"></i>
+                </span>
+              </li>
 
-            <li>
-              <Link to="/">{title}</Link>
-            </li>
-          </ul>
-        </div>
-
-        <h4 className="title">{title}</h4>
-        {data.map((item, i) => (
-          <div key={i} className="info_wrapper">
-            <div className="info_item">
-              <div className="left">
-                <h6>{item.title}</h6>
-                {item.sub_title.map((d, i) => (
-                  <p key={i}>{d.desc}</p>
-                ))}
-              </div>
-
-              <div className="right">
-                <Link to={`/${item.link}`}>{item.link_title}</Link>
-              </div>
-            </div>
-            <hr />
+              <li>
+                <Link to="/">{title}</Link>
+              </li>
+            </ul>
           </div>
-        ))}
+
+          <h4 className="title">{title}</h4>
+          {data.map((item, i) => (
+            <div key={i} className="info_wrapper">
+              <div className="info_item">
+                <div className="left">
+                  <h6>{item.title}</h6>
+                  {item.sub_title.map((d, i) => (
+                    <p key={i}>{d.desc}</p>
+                  ))}
+                </div>
+
+                <div className="right">
+                  <Link to={`/${item.link}`}>{item.link_title}</Link>
+                </div>
+              </div>
+              <hr />
+            </div>
+          ))}
+        </div>
       </div>
-    </div>
+    </Fade>
   );
 }
 

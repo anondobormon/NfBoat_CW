@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Fade } from "react-reveal";
 import { images } from "../../../Assets/Assets";
 import Footer from "../../Layout/Footer/Footer";
 import Navbar from "../../Layout/Navbar/Navbar";
@@ -74,40 +75,47 @@ export default function Contact() {
         <div className="sub_header">
           <div className="container">
             <div className="sub_header_wrapper">
-              <h2 className="header_title">Contactez-nous</h2>
-              <p>Nous serions heureux de répondre à vos questions</p>
-
+              <Fade bottom>
+                <h2 className="header_title">Contactez-nous</h2>
+              </Fade>
+              <Fade delay={100} bottom>
+                <p>Nous serions heureux de répondre à vos questions</p>
+              </Fade>
               <div className="contact_card">
-                <div className="card">
-                  <div className="icon_wrapper">
-                    <img src={images.Contact_message} alt="" />
+                <Fade delay={100} bottom>
+                  <div className="card">
+                    <div className="icon_wrapper">
+                      <img src={images.Contact_message} alt="" />
+                    </div>
+                    <h3>Envoyez nous un email</h3>
+                    <p>
+                      Du Lundi au Vendredi
+                      <br />
+                      08:00 - 18h00
+                    </p>
+
+                    <div className="divider"></div>
+
+                    <p className="email">contact@nfboat.com</p>
                   </div>
-                  <h3>Envoyez nous un email</h3>
-                  <p>
-                    Du Lundi au Vendredi
-                    <br />
-                    08:00 - 18h00
-                  </p>
+                </Fade>
+                <Fade delay={300} bottom>
+                  <div className="card">
+                    <div className="icon_wrapper">
+                      <img src={images.Contact_phone} alt="" />
+                    </div>
+                    <h3>Téléphonez nous</h3>
+                    <p>
+                      Du Lundi au Vendredi
+                      <br />
+                      08:00 - 18h00
+                    </p>
 
-                  <div className="divider"></div>
+                    <div className="divider"></div>
 
-                  <p className="email">contact@nfboat.com</p>
-                </div>
-                <div className="card">
-                  <div className="icon_wrapper">
-                    <img src={images.Contact_phone} alt="" />
+                    <p className="email">contact@nfboat.com</p>
                   </div>
-                  <h3>Téléphonez nous</h3>
-                  <p>
-                    Du Lundi au Vendredi
-                    <br />
-                    08:00 - 18h00
-                  </p>
-
-                  <div className="divider"></div>
-
-                  <p className="email">contact@nfboat.com</p>
-                </div>
+                </Fade>
               </div>
             </div>
           </div>
@@ -115,127 +123,141 @@ export default function Contact() {
 
         <div className="container">
           <section className="message">
-            <div className="left">
-              <h2>
-                Vous préférez nous <br /> laisser un message ?
-              </h2>
-              <p>Nous vous répondrons via nos réseaux sociaux</p>
-              <div className="social_icons">
-                <ul>
-                  <li>
-                    <i class="fa-brands fa-facebook-f"></i>
-                  </li>
-                  <li>
-                    <i class="fa-brands fa-twitter"></i>
-                  </li>
-                  <li>
-                    <i class="fa-brands fa-instagram"></i>
-                  </li>
-                  <li>
-                    <i class="fa-brands fa-linkedin-in"></i>
-                  </li>
-                </ul>
+            <Fade>
+              <div className="left">
+                <h2>
+                  Vous préférez nous <br /> laisser un message ?
+                </h2>
+                <p>Nous vous répondrons via nos réseaux sociaux</p>
+                <div className="social_icons">
+                  <ul>
+                    <li>
+                      <i class="fa-brands fa-facebook-f"></i>
+                    </li>
+                    <li>
+                      <i class="fa-brands fa-twitter"></i>
+                    </li>
+                    <li>
+                      <i class="fa-brands fa-instagram"></i>
+                    </li>
+                    <li>
+                      <i class="fa-brands fa-linkedin-in"></i>
+                    </li>
+                  </ul>
+                </div>
               </div>
-            </div>
+            </Fade>
+            <Fade delay={100}>
+              <div className="right">
+                <div className="block">
+                  <div className="input_field">
+                    <label htmlFor="">Nom complet</label>
+                    <input
+                      className="input"
+                      type="text"
+                      placeholder="Jean Dupont"
+                      name=""
+                      id=""
+                    />
+                  </div>
+                  <div className="input_field">
+                    <label htmlFor="">Adresse email</label>
+                    <input
+                      className="input"
+                      type="email"
+                      placeholder="exemple@email.com"
+                      name=""
+                      id=""
+                    />
+                  </div>
+                </div>
+                <div className="block">
+                  <div className="input_field">
+                    <label htmlFor="">Téléphone</label>
+                    <input
+                      className="input"
+                      type="tel"
+                      placeholder="0612345678"
+                      name=""
+                      id=""
+                    />
+                  </div>
+                  <div className="input_field">
+                    <label htmlFor="">Sujet</label>
+                    <input
+                      className="input"
+                      type="text"
+                      name=""
+                      id=""
+                      placeholder="ex. Partenariat"
+                    />
+                  </div>
+                </div>
 
-            <div className="right">
-              <div className="block">
                 <div className="input_field">
-                  <label htmlFor="">Nom complet</label>
-                  <input
-                    className="input"
-                    type="text"
-                    placeholder="Jean Dupont"
+                  <label htmlFor="">Message</label>
+                  <textarea
                     name=""
                     id=""
-                  />
+                    className="input textarea "
+                    placeholder="Merci d&#x27;écrire votre message"
+                  ></textarea>
                 </div>
-                <div className="input_field">
-                  <label htmlFor="">Adresse email</label>
-                  <input
-                    className="input"
-                    type="email"
-                    placeholder="exemple@email.com"
-                    name=""
-                    id=""
-                  />
-                </div>
-              </div>
-              <div className="block">
-                <div className="input_field">
-                  <label htmlFor="">Téléphone</label>
-                  <input
-                    className="input"
-                    type="tel"
-                    placeholder="0612345678"
-                    name=""
-                    id=""
-                  />
-                </div>
-                <div className="input_field">
-                  <label htmlFor="">Sujet</label>
-                  <input
-                    className="input"
-                    type="text"
-                    name=""
-                    id=""
-                    placeholder="ex. Partenariat"
-                  />
-                </div>
-              </div>
 
-              <div className="input_field">
-                <label htmlFor="">Message</label>
-                <textarea
-                  name=""
-                  id=""
-                  className="input textarea "
-                  placeholder="Merci d&#x27;écrire votre message"
-                ></textarea>
-              </div>
-
-              <input
-                type="submit"
-                value="Envoyer le message"
-                className="button"
-              />
-              <div className="success">
-                <img src={images.IconSuccess} class="image_success" />
-                <div class="success-message-text">
-                  Your message has been submitted. <br />
-                  We will get back to you within 24-48 hours.
+                <input
+                  type="submit"
+                  value="Envoyer le message"
+                  className="button"
+                />
+                <div className="success">
+                  <img src={images.IconSuccess} class="image_success" />
+                  <div class="success-message-text">
+                    Your message has been submitted. <br />
+                    We will get back to you within 24-48 hours.
+                  </div>
                 </div>
+                <div className="error-message">Oops! Something went wrong.</div>
               </div>
-              <div className="error-message">Oops! Something went wrong.</div>
-            </div>
+            </Fade>
           </section>
 
           <div className="space200"></div>
 
           <div className="faq_section">
-            <div class="faq-header">
-              <h2>Foire aux questions</h2>
-              <p>Trouvez les réponses à vos questions dans notre FAQ</p>
-            </div>
-
-            <div className="faq_wrapper">
-              <div className="toggle_two_btn">
-                <button
-                  onClick={() => setFaqstate("card")}
-                  className={`button ${faqstate === "card" && "active"}`}
-                >
-                  NFCard
-                </button>
-                <button
-                  onClick={() => setFaqstate("port")}
-                  className={`button ${faqstate === "port" && "active"}`}
-                >
-                  NFPort
-                </button>
+            <Fade>
+              <div class="faq-header">
+                <h2>Foire aux questions</h2>
+                <p>Trouvez les réponses à vos questions dans notre FAQ</p>
               </div>
-              {faqstate === "port" && <Accordion data={data} />}
-              {faqstate === "card" && <Accordion data={data2} />}
-            </div>
+            </Fade>
+            <Fade delay={100}>
+              <div className="faq_wrapper">
+                <div className="toggle_two_btn">
+                  <button
+                    onClick={() => setFaqstate("card")}
+                    className={`button ${faqstate === "card" && "active"}`}
+                  >
+                    NFCard
+                  </button>
+                  <button
+                    onClick={() => setFaqstate("port")}
+                    className={`button ${faqstate === "port" && "active"}`}
+                  >
+                    NFPort
+                  </button>
+                </div>
+                {faqstate === "port" && (
+                  <Fade delay={100}>
+                    <Accordion data={data} />
+                  </Fade>
+                )}
+                {faqstate === "card" && (
+                  <Fade delay={100}>
+                    <Accordion data={data2} />
+                  </Fade>
+                )}
+              </div>
+            </Fade>
           </div>
         </div>
         <div className="space175"></div>

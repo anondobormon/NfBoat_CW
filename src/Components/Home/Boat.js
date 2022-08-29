@@ -1,55 +1,61 @@
 import React from "react";
+import { Fade, Zoom } from "react-reveal";
 import { images } from "../../Assets/Assets";
 import Tenant_card from "../Shared/Tenant_card/Tenant_card";
 import "./Boat.scss";
+
+const Demo_data = [
+  {
+    title: "Enregistrement d'un bateau",
+    image: images.Boat1,
+  },
+  {
+    title: "Gestion de documents",
+    image: images.Boat2,
+  },
+  {
+    title: "Booking de places de port",
+    image: images.Boat3,
+  },
+  {
+    title: "Locations de bateaux",
+    image: images.Boat4,
+  },
+  {
+    title: "Génération de contrats",
+    image: images.Boat5,
+  },
+  {
+    title: "Fonction contrôle en mer",
+    image: images.Boat6,
+  },
+];
 
 export default function Boat() {
   return (
     <div className="boat">
       <div className="container">
-        <h3 className="boat_title">Une carte, un bateau</h3>
+        <Fade bottom>
+          <h3 className="boat_title">Une carte, un bateau</h3>
+        </Fade>
         <div className="space200"></div>
         <div className="grid_col_3">
-          <div className="card">
-            <div className="card_img">
-              <img src={images.Boat1} alt="" />
-            </div>
-            <div className="card_title">Enregistrement d&#x27;un bateau</div>
-          </div>
-          <div className="card">
-            <div className="card_img">
-              <img src={images.Boat2} alt="" />
-            </div>
-            <div className="card_title">Gestion de documents</div>
-          </div>
-          <div className="card">
-            <div className="card_img">
-              <img src={images.Boat3} alt="" />
-            </div>
-            <div className="card_title">Booking de places de port</div>
-          </div>
-          <div className="card">
-            <div className="card_img">
-              <img src={images.Boat4} alt="" />
-            </div>
-            <div className="card_title">Locations de bateaux</div>
-          </div>
-          <div className="card">
-            <div className="card_img">
-              <img src={images.Boat5} alt="" />
-            </div>
-            <div className="card_title">Génération de contrats</div>
-          </div>
-          <div className="card">
-            <div className="card_img">
-              <img src={images.Boat6} alt="" />
-            </div>
-            <div className="card_title">Fonction contrôle en mer</div>
-          </div>
+          {Demo_data.map((item, i) => (
+            <Fade bottom>
+              <div key={i} className="card">
+                <div className="card_img">
+                  <img src={item.image} alt="" />
+                </div>
+                <div className="card_title">{item.title}</div>
+              </div>
+            </Fade>
+          ))}
         </div>
 
         <div className="demander">
-          <button className="button">Demander ma NFCard</button>
+          <Zoom>
+            <button className="button">Demander ma NFCard</button>
+          </Zoom>
         </div>
 
         <div className="space200"></div>

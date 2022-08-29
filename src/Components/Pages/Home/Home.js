@@ -1,4 +1,5 @@
 import React from "react";
+import Fade from "react-reveal/Fade";
 import Boat from "../../Home/Boat";
 import Comming_Soon_Slider from "../../Home/Comming_Soon_Slider/Comming_Soon_Slider";
 import Hero from "../../Home/Hero";
@@ -12,10 +13,12 @@ export default function Home() {
       <Navbar />
       <Hero />
       <Boat />
-
-      <Comming_Soon_Slider />
+      <Fade>
+        <Comming_Soon_Slider />
+      </Fade>
 
       <hr />
+
       <Footer />
     </div>
   );

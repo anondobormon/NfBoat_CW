@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Fade } from "react-reveal";
 import { images } from "../../../Assets/Assets";
 import Footer from "../../Layout/Footer/Footer";
 import Navbar from "../../Layout/Navbar/Navbar";
@@ -14,29 +15,40 @@ export default function Port_booking() {
         <Navbar />
         <div className="space75"></div>
         <div className="booking_header">
-          <h2>Réserver une place de port</h2>
-          <form className="search">
-            <div className="icon_wrapper">
-              <input type="text" placeholder="Rechercher un sujet" />
-              <img src={images.Filter_icon} alt="" />
-            </div>
+          <Fade bottom>
+            <h2>Réserver une place de port</h2>
+          </Fade>
+          <Fade bottom delay={100}>
+            <form className="search">
+              <div className="icon_wrapper">
+                <input type="text" placeholder="Rechercher un sujet" />
+                <img src={images.Filter_icon} alt="" />
+              </div>
 
-            <button className="button">Recherche</button>
-          </form>
+              <button className="button">Recherche</button>
+            </form>
+          </Fade>
         </div>
 
         <div className="container">
           <div className="suggestions">
             <div className="space125"></div>
-            <h3>Suggestions</h3>
-            <p className="desc">
-              Réservez une place de port en quelques minutes
-            </p>
+            <Fade bottom>
+              <h3>Suggestions</h3>
+            </Fade>
+            <Fade bottom delay={100}>
+              <p className="desc">
+                Réservez une place de port en quelques minutes
+              </p>
+            </Fade>
 
             <div className="space50"></div>
+
             <div className="grid_col_3">
               {Berth_Data.map((item, index) => (
-                <Berth_Card key={index} data={item} />
+                <Fade bottom>
+                  <Berth_Card key={index} data={item} />
+                </Fade>
               ))}
             </div>
           </div>
@@ -46,18 +58,22 @@ export default function Port_booking() {
 
         <div className="faq_wrapper">
           <div className="toggle_two_btn">
-            <button
-              onClick={() => setFaqstate("card")}
-              className={`button ${faqstate === "card" && "active"}`}
-            >
-              NFCard
-            </button>
-            <button
-              onClick={() => setFaqstate("port")}
-              className={`button ${faqstate === "port" && "active"}`}
-            >
-              NFPort
-            </button>
+            <Fade>
+              <button
+                onClick={() => setFaqstate("card")}
+                className={`button ${faqstate === "card" && "active"}`}
+              >
+                NFCard
+              </button>
+            </Fade>
+            <Fade>
+              <button
+                onClick={() => setFaqstate("port")}
+                className={`button ${faqstate === "port" && "active"}`}
+              >
+                NFPort
+              </button>
+            </Fade>
           </div>
 
           {faqstate === "port" && <Accordion data={data} />}

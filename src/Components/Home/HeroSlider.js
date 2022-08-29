@@ -12,32 +12,30 @@ import { images } from "../../Assets/Assets";
 export default function HeroSlider() {
   return (
     <div className="hero_slider">
-      <div className="h_slider">
-        <div className="slider_wrapper">
-          <img src={images.slider_wrapper} alt="" />
-        </div>
-        <Swiper
-          spaceBetween={30}
-          effect={"fade"}
-          loop={true}
-          autoplay={{
-            delay: 2500,
-            disableOnInteraction: false,
-          }}
-          modules={[Autoplay]}
-          className="mySwiper"
-        >
-          <SwiperSlide>
-            <img src={images.slide1} />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={images.slide2} />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={images.slide3} />
-          </SwiperSlide>
-        </Swiper>
+      <div className="slider_wrapper">
+        <img src={images.slider_wrapper} alt="" />
       </div>
+      <Swiper
+        spaceBetween={30}
+        effect={"fade"}
+        loop={true}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+        modules={[Autoplay]}
+        className="mySwiper"
+      >
+        <SwiperSlide>
+          <img src={images.slide1} />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={images.slide2} />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={images.slide3} />
+        </SwiperSlide>
+      </Swiper>
     </div>
   );
 }

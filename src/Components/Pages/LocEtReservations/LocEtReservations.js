@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Fade } from "react-reveal";
 import Footer from "../../Layout/Footer/Footer";
 import Navbar from "../../Layout/Navbar/Navbar";
 import Location_card from "../../Shared/Location_Card/Location_card";
@@ -16,18 +17,22 @@ export default function LocEtReservations() {
       <div className="container-1179px">
         <div className="toggle_wrapper">
           <div className="toggle_two_btn">
-            <button
-              onClick={() => setToggle("locations")}
-              className={`button ${toggle === "locations" && "active"}`}
-            >
-              Locations
-            </button>
-            <button
-              onClick={() => setToggle("port")}
-              className={`button ${toggle === "port" && "active"}`}
-            >
-              Ports
-            </button>
+            <Fade delay={100}>
+              <button
+                onClick={() => setToggle("locations")}
+                className={`button ${toggle === "locations" && "active"}`}
+              >
+                Locations
+              </button>
+            </Fade>
+            <Fade delay={100}>
+              <button
+                onClick={() => setToggle("port")}
+                className={`button ${toggle === "port" && "active"}`}
+              >
+                Ports
+              </button>
+            </Fade>
           </div>
         </div>
 

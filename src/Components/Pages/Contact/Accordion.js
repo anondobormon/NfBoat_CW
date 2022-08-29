@@ -1,4 +1,5 @@
 import React from "react";
+import { Fade } from "react-reveal";
 import "./Accordion.scss";
 
 export default class Accordion extends React.Component {
@@ -7,17 +8,19 @@ export default class Accordion extends React.Component {
       props: { data },
     } = this;
     return (
-      <div {...{ className: "wrapper" }}>
-        <ul {...{ className: "accordion-list" }}>
-          {data.map((data, key) => {
-            return (
-              <li {...{ className: "accordion-list__item", key }}>
-                <AccordionItem {...data} />
-              </li>
-            );
-          })}
-        </ul>
-      </div>
+      <Fade>
+        <div {...{ className: "wrapper" }}>
+          <ul {...{ className: "accordion-list" }}>
+            {data.map((data, key) => {
+              return (
+                <li {...{ className: "accordion-list__item", key }}>
+                  <AccordionItem {...data} />
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+      </Fade>
     );
   }
 }

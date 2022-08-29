@@ -1,4 +1,5 @@
 import React from "react";
+import { Fade } from "react-reveal";
 import { images } from "../../../Assets/Assets";
 import Footer from "../../Layout/Footer/Footer";
 import Navbar from "../../Layout/Navbar/Navbar";
@@ -12,15 +13,19 @@ export default function Search() {
 
         <div className="container">
           <div className="search_area2">
-            <h3>Mon compte</h3>
-            <form className="search">
-              <div className="icon_wrapper">
-                <input type="text" placeholder="Rechercher un sujet" />
-                <img src={images.Filter_icon} alt="" />
-              </div>
+            <Fade bottom>
+              <h3>Mon compte</h3>
+            </Fade>
+            <Fade bottom delay={100}>
+              <form className="search">
+                <div className="icon_wrapper">
+                  <input type="text" placeholder="Rechercher un sujet" />
+                  <img src={images.Filter_icon} alt="" />
+                </div>
 
-              <button className="button">Recherche</button>
-            </form>
+                <button className="button">Recherche</button>
+              </form>
+            </Fade>
           </div>
           <div className="grid_col_3">
             <div className="account_card">
