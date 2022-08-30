@@ -1,10 +1,12 @@
 import React from "react";
 import { images } from "../../../Assets/Assets";
+import MetaData from "../../Utils/MetaData";
 import "./Error401.scss";
 
 export default function Error401() {
   return (
     <div className="error_401">
+      <MetaData title={"Page protégée"} />
       <div className="container">
         <div className="error_content">
           <div className="error_wrapper">

@@ -1,10 +1,13 @@
 import React from "react";
 import Footer from "../../Layout/Footer/Footer";
 import Navbar from "../../Layout/Navbar/Navbar";
+import MetaData from "../../Utils/MetaData";
 
 export default function Termes_conditions() {
   return (
     <div className="privet_life">
+      <MetaData title={"Termes conditions | NFBoat"} />
+
       <Navbar />
       <div className="privet_sub_header">
         <div>

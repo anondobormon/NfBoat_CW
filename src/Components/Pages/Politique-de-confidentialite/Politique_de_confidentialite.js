@@ -1,11 +1,14 @@
 import React from "react";
 import Footer from "../../Layout/Footer/Footer";
 import Navbar from "../../Layout/Navbar/Navbar";
+import MetaData from "../../Utils/MetaData";
 import "./Politique_de_confidentialite.scss";
 
 export default function Politique_de_confidentialite() {
   return (
     <div className="privet_life">
+      <MetaData title={"Politique de confidentialité | NFBoat"} />
+
       <Navbar />
       <div className="privet_sub_header">
         <div>

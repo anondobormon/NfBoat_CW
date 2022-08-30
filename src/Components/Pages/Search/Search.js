@@ -3,12 +3,15 @@ import { Fade } from "react-reveal";
 import { images } from "../../../Assets/Assets";
 import Footer from "../../Layout/Footer/Footer";
 import Navbar from "../../Layout/Navbar/Navbar";
+import MetaData from "../../Utils/MetaData";
 import "../MonCompte/Mon_compte.scss";
 
 export default function Search() {
   return (
     <div>
       <div className="mon_compte">
+        <MetaData title={"Mon compte | NFBoat"} />
+
         <Navbar />
 
         <div className="container">

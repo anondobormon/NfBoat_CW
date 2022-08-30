@@ -1,5 +1,6 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
+import APropos from "../Pages/APropos/APropos";
 import Checkout from "../Pages/Checkout/Checkout";
 import Contact from "../Pages/Contact/Contact";
 import DetailsProduct from "../Pages/DetailsProduct/DetailsProduct";
@@ -31,6 +32,7 @@ export default function Router() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
+      <Route path="/a-propos" element={<APropos />} />
       <Route path="/401" element={<Error401 />} />
       <Route path="/notfound" element={<NotFound />} />
       <Route path="/checkout" element={<Checkout />} />

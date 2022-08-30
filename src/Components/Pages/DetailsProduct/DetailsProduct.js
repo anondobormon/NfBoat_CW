@@ -2,12 +2,15 @@ import React from "react";
 import { Fade } from "react-reveal";
 import Footer from "../../Layout/Footer/Footer";
 import Navbar from "../../Layout/Navbar/Navbar";
+import MetaData from "../../Utils/MetaData";
 import "./DetailsProduct.scss";
 
 export default function DetailsProduct() {
   return (
     <div>
       <div className="details_product">
+        <MetaData title={"Wallet NFCard | NFBoat"} />
+
         <Navbar />
         <div className="container">
           <div className="product_wrapper">

@@ -1,0 +1,106 @@
+.navigate_senary {
+  background-color: #141415;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 150vh;
+
+  .navigate {
+    max-width: 992px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    h2 {
+      color: #009ac2;
+      font-weight: 600;
+      font-size: 32px;
+      text-align: center;
+    }
+    p {
+      text-align: center;
+    }
+
+    .grid_col_2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr !important;
+      gap: 20px;
+
+      .item {
+        border-radius: 15px;
+        padding: 40px;
+        background-color: #1d1e1f;
+
+        width: 100%;
+
+        h3 {
+          color: #fff;
+          text-align: center;
+          margin-bottom: 20px;
+        }
+
+        .img_wrapper {
+          width: 100%;
+          overflow: hidden;
+          max-height: 390px;
+          position: relative;
+          padding: 35px;
+
+          .overlay {
+            position: absolute;
+            left: 0%;
+            top: auto;
+            right: 0%;
+            bottom: 0%;
+            z-index: 2;
+            height: 30%;
+            background-image: -webkit-gradient(
+              linear,
+              left bottom,
+              left top,
+              from(#1d1e1f),
+              to(rgba(29, 30, 30, 0))
+            );
+            background-image: linear-gradient(
+              0deg,
+              #1d1e1f,
+              rgba(29, 30, 30, 0)
+            );
+          }
+
+          .second_img {
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            position: absolute;
+
+            img {
+              width: 100%;
+            }
+          }
+
+          img {
+            width: 100%;
+
+            border-radius: 30px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .navigate_senary {
+    .navigate {
+      .grid_col_2 {
+        grid-template-columns: 1fr !important;
+      }
+    }
+  }
+}

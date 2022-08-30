@@ -3,6 +3,7 @@ import { Fade } from "react-reveal";
 import { images } from "../../../Assets/Assets";
 import Footer from "../../Layout/Footer/Footer";
 import Navbar from "../../Layout/Navbar/Navbar";
+import MetaData from "../../Utils/MetaData";
 import Accordion from "./Accordion";
 import "./Contact.scss";
 
@@ -70,6 +71,8 @@ export default function Contact() {
   return (
     <div>
       <div className="contact">
+        <MetaData title={"Contactez-nous | NFBoat"} />
+
         <Navbar />
 
         <div className="sub_header">

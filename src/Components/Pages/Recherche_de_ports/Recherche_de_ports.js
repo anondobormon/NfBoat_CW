@@ -6,6 +6,7 @@ import Footer from "../../Layout/Footer/Footer";
 import Navbar from "../../Layout/Navbar/Navbar";
 import Berth_Card from "../../Shared/Berth_Card/Berth_Card";
 import Range from "../../Shared/Range_Slider/Range";
+import MetaData from "../../Utils/MetaData";
 import "../LocationBateaux/Location_bateaux.scss";
 import "./Recherche_de_ports.scss";
 
@@ -46,6 +47,8 @@ export default function Recherche_de_ports() {
 
   return (
     <div className="recherche_de_ports">
+      <MetaData title={"Recherche de ports"} />
+
       <Navbar />
       <div className="container">
         <div className="space50"></div>

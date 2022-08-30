@@ -2,11 +2,14 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { images } from "../../../Assets/Assets";
 import Navbar from "../../Layout/Navbar/Navbar";
+import MetaData from "../../Utils/MetaData";
 import "./Messages.scss";
 
 export default function Messages() {
   return (
     <div className="messages">
+      <MetaData title={"Messages | NFBoat"} />
+
       <Navbar />
       <div className="message_container">
         <div className="left">

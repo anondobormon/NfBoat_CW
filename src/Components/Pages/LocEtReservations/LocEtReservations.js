@@ -5,12 +5,15 @@ import Navbar from "../../Layout/Navbar/Navbar";
 import Location_card from "../../Shared/Location_Card/Location_card";
 import Port_card from "../../Shared/Port_Card/Port_card";
 import Sub_header_link from "../../Shared/Sub_Header_Link/Sub_header_link";
+import MetaData from "../../Utils/MetaData";
 import "./LocEtReservations.scss";
 
 export default function LocEtReservations() {
   const [toggle, setToggle] = useState("locations");
   return (
     <div className="locEtReservations">
+      <MetaData title={"Locations et réservations | NFBoat"} />
+
       <Navbar />
       <Sub_header_link link={"Réservations"} />
 

@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { images } from "../../../Assets/Assets";
 import Footer from "../../Layout/Footer/Footer";
 import Navbar from "../../Layout/Navbar/Navbar";
+import MetaData from "../../Utils/MetaData";
 import "./Mon_compte.scss";
 
 export default function Mon_compte() {
@@ -11,6 +12,8 @@ export default function Mon_compte() {
   return (
     <div>
       <div className="mon_compte">
+        <MetaData title={"Mon compte | NFBoat"} />
+
         <Navbar />
 
         <div className="container">

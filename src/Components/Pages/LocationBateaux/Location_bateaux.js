@@ -6,11 +6,18 @@ import Footer from "../../Layout/Footer/Footer";
 import Navbar from "../../Layout/Navbar/Navbar";
 import Ship_card from "../../Shared/Ship_card/Ship_card";
 import Tenant_card from "../../Shared/Tenant_card/Tenant_card";
+import MetaData from "../../Utils/MetaData";
 import "./Location_bateaux.scss";
 
 export default function Location_bateaux() {
   return (
     <div className="location_bateaux">
+      <MetaData
+        title={
+          "Gestion, location de bateaux et réservations de places de ports | NFBoat"
+        }
+      />
+
       <Navbar />
       <div className="module">
         <div className="container">

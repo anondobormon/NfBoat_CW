@@ -1,6 +1,7 @@
 import City_image from "./images/49004a7cccff565b0a8848ef98cb5818.jpeg";
 import Wallet from "./images/5174894-2.jpg";
 import IPhoneX_hand from "./images/61b3e2d2867067cd5a9bb75c_Hand-iPhoneX.png";
+import Amazon from "./images/800px-Amazon_Web_Services_Logo.svg.png";
 import Icons_cloud from "./images/akar-icons_cloud-upload-2.png";
 import Cross_Icon from "./images/akar-icons_cross-1.svg";
 import akar_icons_eye from "./images/akar-icons_eye-open.png";
@@ -9,6 +10,7 @@ import Android_icon from "./images/Android-Icon.svg";
 import Heart_filled from "./images/ant-design_heart-filled.svg";
 import Star_filled from "./images/ant-design_star-filled.svg";
 import Apple_icon from "./images/Apple-Icon.svg";
+import Apple_iPhone_11 from "./images/Apple-iPhone-11-Pro-Space-Grey-1.png";
 import Star from "./images/bxs_star.svg";
 import bx_id_card from "./images/bx_id-card.png";
 import Bx_store from "./images/bx_store.svg";
@@ -20,12 +22,15 @@ import Cli_wc from "./images/cil_wc.svg";
 import ci_notification from "./images/ci_notification-outline-dot.png";
 import Share from "./images/ci_share.svg";
 import Clarity_contract_solid from "./images/clarity_contract-solid.png";
+import Itext from "./images/download-2.png";
+import DS_Case from "./images/DS-case-study-image.png";
 import Entypo_wallet from "./images/entypo_wallet.png";
 import eye from "./images/eye.svg";
 import Boat5 from "./images/fa-solid_file-contract.png";
 import Shower_solid_main from "./images/fa-solid_shower.svg";
 import Power_solid from "./images/fa6-solid_power-off-2.svg";
 import Shower_solid from "./images/fa6-solid_shower-1.svg";
+import Document_icon from "./images/fluent_document-lock-24-filled_1fluent_document-lock-24-filled.png";
 import Fxemoji_anchor from "./images/fxemoji_anchor.png";
 import Boat3 from "./images/fxemoji_anchor_1.png";
 import SearchError from "./images/Group-1614-2.png";
@@ -35,6 +40,7 @@ import Contact_message from "./images/Group-1646.png";
 import Contact_phone from "./images/Group-1647.png";
 import Group_1655 from "./images/Group-1655-1.jpg";
 import Group_553 from "./images/Group-553-1.png";
+import Group_554 from "./images/Group-554-1.png";
 import Group_597 from "./images/Group-597.png";
 import Group_598 from "./images/Group-598.png";
 import Group_599 from "./images/Group-599.png";
@@ -56,6 +62,8 @@ import Image_testimonial from "./images/image-2-testimonial-realtor-template.jpg
 import Image_7 from "./images/image-7.png";
 import Ship_image2 from "./images/image-8-2.png";
 import Ship_image3 from "./images/image-8-3.png";
+import Infog from "./images/infog-2.png";
+import Infog1 from "./images/Infog1.png";
 import ion_cash from "./images/ion_cash-outline.png";
 import Logo from "./images/Logo.png";
 import lucide_settings from "./images/lucide_settings-2.png";
@@ -66,6 +74,7 @@ import Tie_head from "./images/mdi_account-tie-hat.svg";
 import Boat1 from "./images/mdi_sail-boat-1.png";
 import Mdi_sail_boat from "./images/mdi_sail-boat.png";
 import Boat4 from "./images/mdi_sail-boat_1.png";
+import Nft from "./images/nft_1nft.png";
 import Rectangle_516_1 from "./images/Rectangle-516-1.jpg";
 import Rectangle_516_2 from "./images/Rectangle-516-2.jpg";
 import Rectangle_516_3 from "./images/Rectangle-516-3.jpg";
@@ -76,6 +85,7 @@ import Rectangle_517 from "./images/Rectangle-517.jpg";
 import ri_safe from "./images/ri_safe-2-line.svg";
 import Map from "./images/Sans-titre.jpg";
 import Calender from "./images/Sans-titre_1.jpg";
+import Search_boat from "./images/Search-boat-1.png";
 import Slide1 from "./images/slide-1.jpg";
 import Slide2 from "./images/slide-2.jpg";
 import Slide3 from "./images/slide-3.png";
@@ -83,11 +93,22 @@ import SliderWrapper from "./images/slider_wrapper1.png";
 import uil_bill from "./images/uil_bill.svg";
 import Unnamed from "./images/unnamed.jpg";
 import Filter_icon2 from "./images/Vector-2.png";
+import Wallet_boat from "./images/Wallet-with-boats.png";
 
 import Slider_img_1 from "./images/Zodiac-NZo-680-BlackTube_Terracotta_10.jpeg";
 
 export const images = {
   logo: Logo,
+  Wallet_boat: Wallet_boat,
+  Search_boat: Search_boat,
+  Apple_iPhone_11: Apple_iPhone_11,
+  Nft: Nft,
+  Document_icon: Document_icon,
+  DS_Case: DS_Case,
+  Amazon: Amazon,
+  Itext: Itext,
+  Infog: Infog,
+  Infog1: Infog1,
   Slider_img_1: Slider_img_1,
   Rectangle_517: Rectangle_517,
   Rectangle_516: Rectangle_516,
@@ -97,6 +118,7 @@ export const images = {
   Rectangle_516_2: Rectangle_516_2,
   Rectangle_516_3: Rectangle_516_3,
   Group_600: Group_600,
+  Group_554: Group_554,
   IPhoneX_hand: IPhoneX_hand,
   healthicons_no: healthicons_no,
   healthicons_yes: healthicons_yes,

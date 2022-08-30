@@ -1,11 +1,16 @@
 import React from "react";
 import { images } from "../../../Assets/Assets";
 import Navbar from "../../Layout/Navbar/Navbar";
+import MetaData from "../../Utils/MetaData";
 import "./Error401.scss";
 
 export default function NotFound() {
   return (
     <div>
+      <MetaData
+        title={"Not Found - Realtor X - Webflow Ecommerce website template"}
+      />
+
       <Navbar />
       <div className="error_404">
         <div className="container">

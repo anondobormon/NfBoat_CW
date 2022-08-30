@@ -3,12 +3,15 @@ import { Fade } from "react-reveal";
 import { images } from "../../../Assets/Assets";
 import Footer from "../../Layout/Footer/Footer";
 import Navbar from "../../Layout/Navbar/Navbar";
+import MetaData from "../../Utils/MetaData";
 import Checkbox from "./Checkbox";
 import "./Enregistrer.scss";
 
 export default function Enregistrer() {
   return (
     <div className="enregistrer">
+      <MetaData title={"Enregistrer un bateau | NFBoat"} />
+
       <Navbar />
       <div className="container">
         <div className="header">

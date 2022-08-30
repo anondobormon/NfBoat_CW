@@ -4,76 +4,75 @@ import { images } from "../../../Assets/Assets";
 import Footer from "../../Layout/Footer/Footer";
 import Navbar from "../../Layout/Navbar/Navbar";
 import DigitalNavigation from "../../Shared/DigitalNavigation/DigitalNavigation";
+import MetaData from "../../Utils/MetaData";
 import "../Enregistrer/Checkbox.scss";
 import "./Publier_une_annonce.scss";
 
 export default function Publier_une_annonce() {
   const [toggle, setToggle] = useState("Louer mon bateau");
   return (
-    <div>
-      <div className="publier_une_annonce">
-        <Navbar />
-        <div className="container">
-          <div className="header">
-            <Fade>
-              <h2>Publier une annonce</h2>
-            </Fade>
-            <Fade bottom delay={100}>
-              <p>
-                Renseignez les informations de votre bateau avec votre NFCard
-              </p>
-            </Fade>
-          </div>
-          <div className="space25"></div>
+    <div className="publier_une_annonce">
+      <MetaData title={"Publier une annonce | NFBoat"} />
 
-          <div className="toggle_wrapper">
-            <div className="toggle_two_btn">
-              <Fade>
-                <button
-                  onClick={() => setToggle("Louer mon bateau")}
-                  className={`button ${
-                    toggle === "Louer mon bateau" && "active"
-                  }`}
-                >
-                  Louer mon bateau
-                </button>
-              </Fade>
-              <Fade>
-                <button
-                  onClick={() => setToggle("Vendre mon bateau")}
-                  className={`button ${
-                    toggle === "Vendre mon bateau" && "active"
-                  }`}
-                >
-                  Vendre mon bateau
-                </button>
-              </Fade>
-            </div>
-          </div>
-          <div className="space50"></div>
-
-          {toggle === "Louer mon bateau" && (
-            <div className="grid_col_2">
-              <DigitalNavigation />
-              <div className="wrapper wrapper2">
-                <AddForm />
-              </div>
-            </div>
-          )}
-          {toggle === "Vendre mon bateau" && (
-            <div className="grid_col_2">
-              <DigitalNavigation />
-              <div className="wrapper wrapper2">
-                <AddForm2 />
-              </div>
-            </div>
-          )}
+      <Navbar />
+      <div className="container">
+        <div className="header">
+          <Fade>
+            <h2>Publier une annonce</h2>
+          </Fade>
+          <Fade bottom delay={100}>
+            <p>Renseignez les informations de votre bateau avec votre NFCard</p>
+          </Fade>
         </div>
+        <div className="space25"></div>
 
-        <hr />
+        <div className="toggle_wrapper">
+          <div className="toggle_two_btn">
+            <Fade>
+              <button
+                onClick={() => setToggle("Louer mon bateau")}
+                className={`button ${
+                  toggle === "Louer mon bateau" && "active"
+                }`}
+              >
+                Louer mon bateau
+              </button>
+            </Fade>
+            <Fade>
+              <button
+                onClick={() => setToggle("Vendre mon bateau")}
+                className={`button ${
+                  toggle === "Vendre mon bateau" && "active"
+                }`}
+              >
+                Vendre mon bateau
+              </button>
+            </Fade>
+          </div>
+        </div>
+        <div className="space50"></div>
 
-        <Footer />
+        {toggle === "Louer mon bateau" && (
+          <div className="grid_col_2">
+            <DigitalNavigation />
+            <div className="wrapper wrapper2">
+              <AddForm />
+            </div>
+          </div>
+        )}
+        {toggle === "Vendre mon bateau" && (
+          <div className="grid_col_2">
+            <DigitalNavigation />
+            <div className="wrapper wrapper2">
+              <AddForm2 />
+            </div>
+          </div>
+        )}
       </div>
+
+      <hr />
+
+      <Footer />
     </div>
   );
 }

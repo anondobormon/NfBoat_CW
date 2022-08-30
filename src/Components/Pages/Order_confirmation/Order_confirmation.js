@@ -5,6 +5,7 @@ import { images } from "../../../Assets/Assets";
 import Footer from "../../Layout/Footer/Footer";
 import Navbar from "../../Layout/Navbar/Navbar";
 import Sub_Header from "../../Shared/Sub_Header/Sub_Header";
+import MetaData from "../../Utils/MetaData";
 import "./Order_confirmation.scss";
 
 const sub_header_data = {
@@ -16,6 +17,8 @@ export default function Order_confirmation() {
   return (
     <div>
       <div className="order_confirmation">
+        <MetaData title={"Confirmation de commande | NFBoat"} />
+
         <Navbar />
         <Sub_Header data={sub_header_data} />
         <div className="space50"></div>

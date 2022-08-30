@@ -4,88 +4,88 @@ import { images } from "../../../Assets/Assets";
 import Footer from "../../Layout/Footer/Footer";
 import Navbar from "../../Layout/Navbar/Navbar";
 import Berth_Card from "../../Shared/Berth_Card/Berth_Card";
+import MetaData from "../../Utils/MetaData";
 import Accordion from "../Contact/Accordion";
 import "./Port_booking.scss";
 
 export default function Port_booking() {
   const [faqstate, setFaqstate] = useState("card");
   return (
-    <div>
-      <div className="port_booking">
-        <Navbar />
-        <div className="space75"></div>
-        <div className="booking_header">
+    <div className="port_booking">
+      <MetaData title={"Réservation de places de ports | NFBoat"} />
+      <Navbar />
+      <div className="space75"></div>
+      <div className="booking_header">
+        <Fade bottom>
+          <h2>Réserver une place de port</h2>
+        </Fade>
+        <Fade bottom delay={100}>
+          <form className="search">
+            <div className="icon_wrapper">
+              <input type="text" placeholder="Rechercher un sujet" />
+              <img src={images.Filter_icon} alt="" />
+            </div>
+
+            <button className="button">Recherche</button>
+          </form>
+        </Fade>
+      </div>
+
+      <div className="container">
+        <div className="suggestions">
+          <div className="space125"></div>
           <Fade bottom>
-            <h2>Réserver une place de port</h2>
+            <h3>Suggestions</h3>
           </Fade>
           <Fade bottom delay={100}>
-            <form className="search">
-              <div className="icon_wrapper">
-                <input type="text" placeholder="Rechercher un sujet" />
-                <img src={images.Filter_icon} alt="" />
-              </div>
+            <p className="desc">
+              Réservez une place de port en quelques minutes
+            </p>
+          </Fade>
 
-              <button className="button">Recherche</button>
-            </form>
+          <div className="space50"></div>
+
+          <div className="grid_col_3">
+            {Berth_Data.map((item, index) => (
+              <Fade bottom>
+                <Berth_Card key={index} data={item} />
+              </Fade>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      <div className="space75"></div>
+
+      <div className="faq_wrapper">
+        <div className="toggle_two_btn">
+          <Fade>
+            <button
+              onClick={() => setFaqstate("card")}
+              className={`button ${faqstate === "card" && "active"}`}
+            >
+              NFCard
+            </button>
+          </Fade>
+          <Fade>
+            <button
+              onClick={() => setFaqstate("port")}
+              className={`button ${faqstate === "port" && "active"}`}
+            >
+              NFPort
+            </button>
           </Fade>
         </div>
 
-        <div className="container">
-          <div className="suggestions">
-            <div className="space125"></div>
-            <Fade bottom>
-              <h3>Suggestions</h3>
-            </Fade>
-            <Fade bottom delay={100}>
-              <p className="desc">
-                Réservez une place de port en quelques minutes
-              </p>
-            </Fade>
-
-            <div className="space50"></div>
-
-            <div className="grid_col_3">
-              {Berth_Data.map((item, index) => (
-                <Fade bottom>
-                  <Berth_Card key={index} data={item} />
-                </Fade>
-              ))}
-            </div>
-          </div>
-        </div>
-
-        <div className="space75"></div>
-
-        <div className="faq_wrapper">
-          <div className="toggle_two_btn">
-            <Fade>
-              <button
-                onClick={() => setFaqstate("card")}
-                className={`button ${faqstate === "card" && "active"}`}
-              >
-                NFCard
-              </button>
-            </Fade>
-            <Fade>
-              <button
-                onClick={() => setFaqstate("port")}
-                className={`button ${faqstate === "port" && "active"}`}
-              >
-                NFPort
-              </button>
-            </Fade>
-          </div>
-
-          {faqstate === "port" && <Accordion data={data} />}
-          {faqstate === "card" && <Accordion data={data2} />}
-        </div>
-
-        <hr />
-
-        <div className="space75"></div>
-
-        <Footer />
+        {faqstate === "port" && <Accordion data={data} />}
+        {faqstate === "card" && <Accordion data={data2} />}
       </div>
+
+      <hr />
+
+      <div className="space75"></div>
+
+      <Footer />
     </div>
   );
 }

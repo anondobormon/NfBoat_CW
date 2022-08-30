@@ -3,6 +3,7 @@ import { Fade } from "react-reveal";
 import Footer from "../../Layout/Footer/Footer";
 import Navbar from "../../Layout/Navbar/Navbar";
 import DigitalNavigation from "../../Shared/DigitalNavigation/DigitalNavigation";
+import MetaData from "../../Utils/MetaData";
 import "../Enregistrer/Enregistrer.scss";
 import "./JoinUs.scss";
 
@@ -10,6 +11,8 @@ export default function JoinUs() {
   const [toggle, setToggle] = useState("registration");
   return (
     <div className="join-us join_us_section">
+      <MetaData title={"Inscription et connexion | NFBoat"} />
+
       <Navbar />
       <div className="container">
         <div className="header">

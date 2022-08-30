@@ -6,6 +6,7 @@ import Footer from "../../Layout/Footer/Footer";
 import Navbar from "../../Layout/Navbar/Navbar";
 import Range from "../../Shared/Range_Slider/Range";
 import Ship_card from "../../Shared/Ship_card/Ship_card";
+import MetaData from "../../Utils/MetaData";
 import "../LocationBateaux/Location_bateaux.scss";
 import "../Recherche_de_ports/Recherche_de_ports.scss";
 
@@ -46,6 +47,8 @@ export default function Recherche() {
 
   return (
     <div className="recherche_de_ports">
+      <MetaData title={"Rechercher un bateau - Locations et ventes | NFBoat"} />
+
       <Navbar />
       <div className="container">
         <div className="space50"></div>

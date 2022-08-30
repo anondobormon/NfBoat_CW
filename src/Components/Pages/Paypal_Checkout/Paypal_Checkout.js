@@ -3,6 +3,7 @@ import { Fade } from "react-reveal";
 import Footer from "../../Layout/Footer/Footer";
 import Navbar from "../../Layout/Navbar/Navbar";
 import Sub_Header from "../../Shared/Sub_Header/Sub_Header";
+import MetaData from "../../Utils/MetaData";
 import "./Paypal_Checkout.scss";
 
 const sub_header_data = {
@@ -13,6 +14,12 @@ const sub_header_data = {
 export default function Paypal_Checkout() {
   return (
     <div className="paypal_checkout">
+      <MetaData
+        title={
+          "Checkout (PayPal) - Realtor X - Webflow Ecommerce website template"
+        }
+      />
+
       <Navbar />
       <Sub_Header data={sub_header_data} />
       <div className="space150"></div>

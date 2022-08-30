@@ -46,10 +46,6 @@
           line-height: 1.111em;
           font-weight: 500;
 
-          &.account {
-            display: none;
-          }
-
           a {
             text-decoration: none;
             color: #222223;
@@ -94,6 +90,7 @@
                 visibility: hidden;
                 opacity: 0;
                 transition: all 0.3s;
+                z-index: 222222;
               }
 
               .list_items {
@@ -138,8 +135,75 @@
           }
         }
 
-        .mobile_dropdown {
+        &.mobile {
           display: none;
+
+          .menu_item_mobile {
+            cursor: pointer;
+            transition: 0.3s;
+
+            span {
+              display: inline-block;
+              margin-left: 8px;
+              font-size: 13px;
+              font-weight: 100;
+              transition: 300ms ease;
+            }
+
+            &:hover {
+              color: #0099c2;
+              .menu_item_mobile {
+                span {
+                  transform: rotate(180deg);
+                }
+              }
+            }
+          }
+        }
+      }
+      .dropdown2 {
+      }
+
+      .dropdown_list2 {
+        min-width: 300px;
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+        box-shadow: 0 3px 20px 0 rgb(8 15 52 / 6%);
+        padding: 64px 66px;
+        left: -80%;
+        z-index: 111;
+        border-radius: 35px;
+        display: flex;
+        .list_items {
+          padding: 0;
+
+          .menu_header {
+            color: #222223;
+            font-size: 20px;
+            line-height: 1.4em;
+            font-weight: 600;
+          }
+          .menu_item {
+            a {
+              // width: 100%;
+              display: inline-block !important;
+              margin-top: 24px;
+              font-size: 16px;
+              color: #8d8d91;
+              transition: color 300ms ease;
+              font-weight: 500;
+              font-size: 16px !important;
+
+              &:hover {
+                color: #0099c2;
+
+                span {
+                  transform: rotate(180deg);
+                }
+              }
+            }
+          }
         }
       }
     }
@@ -168,19 +232,20 @@
 
         .search_bar {
           position: absolute;
-          top: 65px;
+          top: 85px;
           right: -80%;
           padding: 30px;
-          border: 1px solid blue;
           border-radius: 30px;
           background-color: #fff;
           z-index: 1112;
           transition: all 0.5s;
           visibility: hidden;
+          opacity: 0;
 
           &.show_search_bar {
             top: 65;
             visibility: visible;
+            opacity: 1;
           }
 
           form {
@@ -215,9 +280,6 @@
           }
         }
       }
-    }
-    .Connexion {
-      display: none;
     }
 
     .menu_icon_wrapper {
@@ -257,20 +319,15 @@
         top: 100px;
         left: 0;
         width: 100%;
-        height: calc(100vh - 100px);
         background-color: #fff;
         z-index: -1;
+        opacity: 1;
+        max-height: calc(100vh - 100px);
         overflow-y: scroll;
-        padding-bottom: 40px;
-        opacity: 0;
-        transform: translateY(-100vh);
         transition: 0.5s;
 
         .menu_items {
-          margin-top: 50px;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
+          display: none;
 
           .menu_item {
             margin: 10px 0;
@@ -287,45 +344,23 @@
             }
           }
 
-          .mobile_dropdown {
-            padding: 64px 66px;
-            border-radius: 35px;
+          &.mobile {
             display: flex;
-            gap: 64px;
-            max-width: 640px;
-            visibility: hidden;
-            opacity: 0;
-            transition: all 0.3s;
-            display: none;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
 
-            .mobile_dropdown_list {
-              display: flex;
-              width: 100%;
-              gap: 20px;
-              justify-content: space-between;
-
-              .mobile_list_items {
-                list-style: none;
-                a {
-                  color: #8d8d91;
-                  font-weight: 500;
-                  font-size: 16px;
-                  transition: all 0.3s;
-
-                  &:hover {
-                    color: #0099c2;
-                  }
-                }
-              }
+            .Connexion {
+              display: block;
+              margin-bottom: 20px;
             }
-          }
-          .information {
-            display: block;
 
-            &:hover + .mobile_dropdown {
-              display: flex;
-              visibility: visible;
-              opacity: 1;
+            .menu_item {
+              a,
+              .menu_item_mobile {
+                font-size: 28px;
+                margin: 10px 0;
+              }
             }
           }
         }
@@ -337,6 +372,7 @@
 
       .menu_icon_wrapper {
         display: flex;
+        cursor: pointer;
       }
     }
   }

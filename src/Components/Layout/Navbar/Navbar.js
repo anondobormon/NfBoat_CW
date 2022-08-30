@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Fade from "react-reveal/Fade";
 import { Link } from "react-router-dom";
 import { images } from "../../../Assets/Assets";
 import "./Navbar.scss";
@@ -6,6 +7,7 @@ import "./Navbar.scss";
 export default function Navbar() {
   const [searchBar, setSearchBar] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
+  const [showMenu2, setShowMenu2] = useState(false);
 
   const style = {
     opacity: "1",
@@ -20,63 +22,18 @@ export default function Navbar() {
             <img src={images.logo} alt="" />
           </Link>
 
-          {/* <div className="menu">
+          <div className="menu">
             <ul className="menu_items">
-              <li className="menu_item account">
-                <Link to="/">Mon compte</Link>
-              </li>
-              <li className="menu_item account">
-                <Link to="/">Wallet</Link>
-              </li>
-              <li className="menu_item account">
-                <Link to="/">Messages</Link>
-              </li>
-              <li className="menu_item account">
-                <Link to="/">Réservations</Link>
-              </li>
-              <li className="menu_item account">
-                <Link to="/">Favoris</Link>
+              <li className="menu_item">
+                <Link to="/location-bateaux">Louer un bateau</Link>
               </li>
               <li className="menu_item">
-                <Link to="/">Louer un bateau</Link>
-              </li>
-              <li className="menu_item">
-                <Link to="/">NFPort</Link>
+                <Link to="/port-booking">NFPort</Link>
               </li>
               <li className="menu_item">
                 <Link to="/">À propos</Link>
               </li>
-              <li className="menu_item information">
-                <Link to="/">Informations</Link>
-              </li>
 
-              <li className="mobile_dropdown">
-                <div className="mobile_dropdown_list">
-                  <ul className="mobile_list_items">
-                    <h4 className="mobile_menu_header">Aide</h4>
-
-                    <li className="mobile_menu_item">
-                      <Link to="/">Créer un compte</Link>
-                    </li>
-                    <li className="mobile_menu_item">
-                      <Link to="/">Nous contacter</Link>
-                    </li>
-                    <li className="mobile_menu_item">
-                      <Link to="/">Devenir loueur</Link>
-                    </li>
-                  </ul>
-                  <ul className="mobile_list_items">
-                    <h4 className="mobile_menu_header">Légal</h4>
-
-                    <li className="mobile_menu_item">
-                      <Link to="/">Termes et conditions</Link>
-                    </li>
-                    <li className="mobile_menu_item">
-                      <Link to="/">Politique de confidentialité</Link>
-                    </li>
-                  </ul>
-                </div>
-              </li>
               <li className="menu_item dropdown">
                 <Link to="/">
                   Informations
@@ -90,34 +47,111 @@ export default function Navbar() {
                     <h4 className="menu_header">Aide</h4>
 
                     <li className="menu_item">
-                      <Link to="/">Créer un compte</Link>
+                      <Link to="/join-us">Créer un compte</Link>
                     </li>
                     <li className="menu_item">
-                      <Link to="/">Nous contacter</Link>
+                      <Link to="/contact">Nous contacter</Link>
                     </li>
                     <li className="menu_item">
-                      <Link to="/">Devenir loueur</Link>
+                      <Link to="/join-us">Devenir loueur</Link>
                     </li>
                   </ul>
                   <ul className="list_items">
                     <h4 className="menu_header">Légal</h4>
 
                     <li className="menu_item">
-                      <Link to="/">Termes et conditions</Link>
+                      <Link to="/termes-conditions">Termes et conditions</Link>
                     </li>
                     <li className="menu_item">
-                      <Link to="/">Politique de confidentialité</Link>
+                      <Link to="/politique-de-confidentialite">
+                        Politique de confidentialité
+                      </Link>
                     </li>
                   </ul>
                 </div>
               </li>
-              <li className="menu_item">
-                <button className="button Connexion button_black">
-                  Connexion
-                </button>
-              </li>
             </ul>
-          </div> */}
+            {showMenu && (
+              <Fade top>
+                <ul className="menu_items mobile">
+                  <li className="menu_item">
+                    <Link to="/mon-compte">Mon compte</Link>
+                  </li>
+                  <li className="menu_item">
+                    <Link to="/wallet">Wallet</Link>
+                  </li>
+                  <li className="menu_item">
+                    <Link to="/message">Messages</Link>
+                  </li>
+                  <li className="menu_item">
+                    <Link to="/loc-et-reservations">Réservations</Link>
+                  </li>
+                  <li className="menu_item">
+                    <Link to="/favoris">Favoris</Link>
+                  </li>
+                  <li className="menu_item">
+                    <Link to="/location-bateaux">Louer un bateau</Link>
+                  </li>
+                  <li className="menu_item">
+                    <Link to="/port-booking">NFPort</Link>
+                  </li>
+                  <li className="menu_item">
+                    <Link to="/">À propos</Link>
+                  </li>
+
+                  <li className="menu_item ">
+                    <div
+                      className="menu_item_mobile"
+                      onClick={() => setShowMenu2(!showMenu2)}
+                    >
+                      Informations
+                      <span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                      </span>
+                    </div>
+                  </li>
+
+                  {showMenu2 && (
+                    <Fade>
+                      <div className="dropdown_list2 show_dropdown2">
+                        <ul className="list_items">
+                          <h4 className="menu_header">Aide</h4>
+
+                          <li className="menu_item">
+                            <Link to="/join-us">Créer un compte</Link>
+                          </li>
+                          <li className="menu_item">
+                            <Link to="/contact">Nous contacter</Link>
+                          </li>
+                          <li className="menu_item">
+                            <Link to="/join-us">Devenir loueur</Link>
+                          </li>
+                        </ul>
+                        <ul className="list_items">
+                          <h4 className="menu_header">Légal</h4>
+
+                          <li className="menu_item">
+                            <Link to="/termes-conditions">
+                              Termes et conditions
+                            </Link>
+                          </li>
+                          <li className="menu_item">
+                            <Link to="/politique-de-confidentialite">
+                              Politique de confidentialité
+                            </Link>
+                          </li>
+                        </ul>
+                      </div>
+                    </Fade>
+                  )}
+
+                  <li className="menu_item">
+                    <button className="button Connexion">Connexion</button>
+                  </li>
+                </ul>
+              </Fade>
+            )}
+          </div>
 
           <div className="search_area">
             <div className="search">
