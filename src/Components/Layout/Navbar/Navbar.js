@@ -31,7 +31,7 @@ export default function Navbar() {
                 <Link to="/port-booking">NFPort</Link>
               </li>
               <li className="menu_item">
-                <Link to="/">À propos</Link>
+                <Link to="/a-propos">À propos</Link>
               </li>
 
               <li className="menu_item dropdown">
@@ -96,7 +96,7 @@ export default function Navbar() {
                     <Link to="/port-booking">NFPort</Link>
                   </li>
                   <li className="menu_item">
-                    <Link to="/">À propos</Link>
+                    <Link to="/a-propos">À propos</Link>
                   </li>
 
                   <li className="menu_item ">

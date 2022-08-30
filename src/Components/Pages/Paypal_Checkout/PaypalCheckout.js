@@ -11,7 +11,7 @@ const sub_header_data = {
   desc: "Please review your checkout details below. If everything is correct, place your order and you will receive more information via email.",
 };
 
-export default function Paypal_Checkout() {
+export default function PaypalCheckout() {
   return (
     <div className="paypal_checkout">
       <MetaData

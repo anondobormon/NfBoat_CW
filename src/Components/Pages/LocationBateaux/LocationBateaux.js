@@ -9,7 +9,7 @@ import Tenant_card from "../../Shared/Tenant_card/Tenant_card";
 import MetaData from "../../Utils/MetaData";
 import "./Location_bateaux.scss";
 
-export default function Location_bateaux() {
+export default function LocationBateaux() {
   return (
     <div className="location_bateaux">
       <MetaData

@@ -7,7 +7,7 @@ import MetaData from "../../Utils/MetaData";
 import "./Home_v2.scss";
 import Slider from "./Slider";
 
-export default function Home_v2() {
+export default function HomeV2() {
   return (
     <div className="home_v2">
       <MetaData title={"Location et vente de bateaux | NFBoat"} />

@@ -7,7 +7,7 @@ import Navbar from "../../Layout/Navbar/Navbar";
 import MetaData from "../../Utils/MetaData";
 import "./Mon_compte.scss";
 
-export default function Mon_compte() {
+export default function MonCompte() {
   const [toggle, setToggle] = useState("cards");
   return (
     <div>

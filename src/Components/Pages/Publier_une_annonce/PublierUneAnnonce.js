@@ -8,7 +8,7 @@ import MetaData from "../../Utils/MetaData";
 import "../Enregistrer/Checkbox.scss";
 import "./Publier_une_annonce.scss";
 
-export default function Publier_une_annonce() {
+export default function PublierUneAnnonce() {
   const [toggle, setToggle] = useState("Louer mon bateau");
   return (
     <div className="publier_une_annonce">

@@ -2,22 +2,23 @@ import React from "react";
 import Footer from "../../Layout/Footer/Footer";
 import Navbar from "../../Layout/Navbar/Navbar";
 import MetaData from "../../Utils/MetaData";
+import "./Politique_de_confidentialite.scss";
 
-export default function Termes_conditions() {
+export default function PolitiqueDeConfidentialite() {
   return (
     <div className="privet_life">
-      <MetaData title={"Termes conditions | NFBoat"} />
+      <MetaData title={"Politique de confidentialité | NFBoat"} />
 
       <Navbar />
       <div className="privet_sub_header">
         <div>
-          <h2>Termes et conditions</h2>
+          <h2>Vie Privée</h2>
+          <p>Effective date: Sep 1, 2020</p>
         </div>
       </div>
       <div className="space50"></div>
-
       <div className="container">
-        <div class="content_wrapper_privet">
+        <div className="content_wrapper_privet">
           <h3>Politique de confidentialité</h3>
           <p>‍</p>
           <p>
@@ -155,6 +156,7 @@ export default function Termes_conditions() {
           </p>
           <p>‍</p>
           <h4>Informations de contact</h4>
+
           <p>
             Si vous souhaitez nous contacter pour mieux comprendre la présente
             politique ou si vous souhaitez nous contacter concernant toute

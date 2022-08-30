@@ -8,7 +8,7 @@ import MetaData from "../../Utils/MetaData";
 import Accordion from "../Contact/Accordion";
 import "./Port_booking.scss";
 
-export default function Port_booking() {
+export default function PortBooking() {
   const [faqstate, setFaqstate] = useState("card");
   return (
     <div className="port_booking">

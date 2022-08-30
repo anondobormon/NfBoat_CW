@@ -13,7 +13,7 @@ const sub_header_data = {
   desc: "Merci d'avoir passé votre commande. Vous recevrez plus d'informations par e-mail.",
 };
 
-export default function Order_confirmation() {
+export default function OrderConfirmation() {
   return (
     <div>
       <div className="order_confirmation">

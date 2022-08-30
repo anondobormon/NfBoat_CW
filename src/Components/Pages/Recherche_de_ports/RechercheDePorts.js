@@ -42,7 +42,7 @@ const BoatData = [
   },
 ];
 
-export default function Recherche_de_ports() {
+export default function RechercheDePorts() {
   const [showModal, setShowModal] = useState(false);
 
   return (
