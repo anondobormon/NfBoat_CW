@@ -1,9 +1,9 @@
 import React from "react";
 import { Fade } from "react-reveal";
 import { Link } from "react-router-dom";
-import "./Sub_header_link.scss";
+import "./SubHeaderLink.scss";
 
-export default function Sub_header_link({ mon, link }) {
+export default function SubHeaderLink({ mon, link }) {
   return (
     <div className="sub_header_link container">
       <Fade>
@@ -11,7 +11,7 @@ export default function Sub_header_link({ mon, link }) {
           <li>
             <Link to={`/${mon && mon}`}>Mon compte</Link>{" "}
             <span>
-              <i class="fa-solid fa-chevron-right"></i>
+              <i className="fa-solid fa-chevron-right"></i>
             </span>
           </li>
 

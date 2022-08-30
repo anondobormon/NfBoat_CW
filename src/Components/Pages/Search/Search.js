@@ -4,7 +4,7 @@ import { images } from "../../../Assets/Assets";
 import Footer from "../../Layout/Footer/Footer";
 import Navbar from "../../Layout/Navbar/Navbar";
 import MetaData from "../../Utils/MetaData";
-import "../MonCompte/Mon_compte.scss";
+import "../MonCompte/MonCompte.scss";
 
 export default function Search() {
   return (

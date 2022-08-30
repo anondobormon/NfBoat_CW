@@ -1,8 +1,8 @@
 import React from "react";
 import { Zoom } from "react-reveal";
-import "./Tenant_card.scss";
+import "./TenantCard.scss";
 
-export default function Tenant_card() {
+export default function TenantCard() {
   return (
     <div className="tenant-card">
       <div className="grid_col_2">

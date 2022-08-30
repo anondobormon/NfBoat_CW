@@ -25,7 +25,7 @@ export default function Error401() {
                 type="submit"
                 value="Entrer sur le site"
                 data-wait="Veuillez patienter..."
-                class="button"
+                className="button"
               />
             </form>
           </div>

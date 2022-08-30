@@ -1,9 +1,9 @@
 import React from "react";
 import { Fade } from "react-reveal";
 import { images } from "../../../Assets/Assets";
-import "./Port_card.scss";
+import "./PortCard.scss";
 
-export default function Port_card() {
+export default function PortCard() {
   return (
     <Fade delay={100}>
       <div className="ports_card">

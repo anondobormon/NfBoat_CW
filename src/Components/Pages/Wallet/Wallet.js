@@ -298,7 +298,7 @@ export default function Wallet() {
                         Wallet
                       </Link>{" "}
                       <span>
-                        <i class="fa-solid fa-chevron-right"></i>
+                        <i className="fa-solid fa-chevron-right"></i>
                       </span>
                     </li>
 
@@ -376,7 +376,7 @@ export default function Wallet() {
                         Wallet
                       </Link>{" "}
                       <span>
-                        <i class="fa-solid fa-chevron-right"></i>
+                        <i className="fa-solid fa-chevron-right"></i>
                       </span>
                     </li>
 
@@ -395,7 +395,7 @@ export default function Wallet() {
                     <h4>
                       Choisir un bateau
                       <span>
-                        <i class="fa-solid fa-angle-down"></i>
+                        <i className="fa-solid fa-angle-down"></i>
                       </span>
                     </h4>
                     <div className="modal">
@@ -407,7 +407,7 @@ export default function Wallet() {
                     <h4>
                       Choisir un type de document
                       <span>
-                        <i class="fa-solid fa-angle-down"></i>
+                        <i className="fa-solid fa-angle-down"></i>
                       </span>
                     </h4>
                     <div className="modal">

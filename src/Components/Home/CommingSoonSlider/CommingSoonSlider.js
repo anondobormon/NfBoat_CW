@@ -1,5 +1,5 @@
 import React from "react";
-import "./Comming_Soon_Slider.scss";
+import "./CommingSoonSlider.scss";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -11,7 +11,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { images } from "../../../Assets/Assets";
 
-export default function Comming_Soon_Slider() {
+export default function CommingSoonSlider() {
   return (
     <div className="comming_soon_slider">
       <div className="space200"></div>

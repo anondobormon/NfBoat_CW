@@ -17,7 +17,7 @@ export default function TermesConditions() {
       <div className="space50"></div>
 
       <div className="container">
-        <div class="content_wrapper_privet">
+        <div className="content_wrapper_privet">
           <h3>Politique de confidentialité</h3>
           <p>‍</p>
           <p>

@@ -314,7 +314,11 @@ export default function Enregistrer() {
                   </label>
                 </div>
                 <div className="submit">
-                  <input type="submit" value="Créer ma NFCard" class="button" />
+                  <input
+                    type="submit"
+                    value="Créer ma NFCard"
+                    className="button"
+                  />
                 </div>
               </form>
             </div>

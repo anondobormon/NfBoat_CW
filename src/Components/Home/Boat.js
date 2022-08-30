@@ -1,7 +1,7 @@
 import React from "react";
 import { Fade, Zoom } from "react-reveal";
 import { images } from "../../Assets/Assets";
-import Tenant_card from "../Shared/Tenant_card/Tenant_card";
+import TenantCard from "../Shared/TenantCard/TenantCard";
 import "./Boat.scss";
 
 const Demo_data = [
@@ -60,7 +60,7 @@ export default function Boat() {
 
         <div className="space200"></div>
 
-        <Tenant_card />
+        <TenantCard />
       </div>
     </div>
   );

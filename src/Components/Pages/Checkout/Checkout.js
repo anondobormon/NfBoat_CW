@@ -2,7 +2,7 @@ import React from "react";
 import { Fade } from "react-reveal";
 import Footer from "../../Layout/Footer/Footer";
 import Navbar from "../../Layout/Navbar/Navbar";
-import Sub_Header from "../../Shared/Sub_Header/Sub_Header";
+import SubHeader from "../../Shared/SubHeader/SubHeader";
 import MetaData from "../../Utils/MetaData";
 import "./Checkout.scss";
 
@@ -19,7 +19,7 @@ export default function Checkout() {
       />
 
       <Navbar />
-      <Sub_Header data={sub_header_data} />
+      <SubHeader data={sub_header_data} />
       <div className="space175"></div>
       <div className="container">
         <Fade>

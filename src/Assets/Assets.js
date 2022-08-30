@@ -47,6 +47,8 @@ import Group_599 from "./images/Group-599.png";
 import Group_600 from "./images/Group-600.svg";
 import healthicons_no from "./images/healthicons_no-outline.svg";
 import healthicons_yes from "./images/healthicons_yes-outline.svg";
+import Home1_1 from "./images/Home-1-1.jpg";
+import Home12 from "./images/Home12.jpg";
 import Message_icon from "./images/icon-1-split-newsletter-realtor-template.svg";
 import Filter_icon from "./images/icon-4-filters-realtor-template.svg";
 import Location from "./images/icon-address-property-realtor-template.svg";
@@ -103,6 +105,8 @@ export const images = {
   Search_boat: Search_boat,
   Apple_iPhone_11: Apple_iPhone_11,
   Nft: Nft,
+  Home12: Home12,
+  Home1_1: Home1_1,
   Document_icon: Document_icon,
   DS_Case: DS_Case,
   Amazon: Amazon,

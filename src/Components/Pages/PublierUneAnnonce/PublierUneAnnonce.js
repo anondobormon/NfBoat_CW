@@ -82,29 +82,29 @@ function AddForm() {
     <Fade bottom delay={100}>
       <form>
         <div className="block">
-          <div class="input_field">
-            <label htmlFor="Price-2-2" class="field-label-8">
+          <div className="input_field">
+            <label htmlFor="Price-2-2" className="field-label-8">
               Prix par jour
             </label>
             <input
               type="number"
-              class="input"
+              className="input"
               name="Price-2"
               placeholder="ex: 400€"
               id="Price-2-2"
               required=""
             />
           </div>
-          <div class="input_field">
-            <label htmlFor="Price-3" class="field-label-8">
+          <div className="input_field">
+            <label htmlFor="Price-3" className="field-label-8">
               Assurance
             </label>
-            <div class="select-wrapper">
+            <div className="select-wrapper">
               <select
                 id="R-gion-aff-maritimes-2"
                 name="R-gion-aff-maritimes-2"
                 required=""
-                class="input"
+                className="input"
               >
                 <option value="Another option">Séléctionner</option>
               </select>
@@ -113,9 +113,9 @@ function AddForm() {
         </div>
         <div
           id="w-node-ddb22939-9143-5dde-0abd-cdf309fb324c-4789822a"
-          class="input_field"
+          className="input_field"
         >
-          <label htmlFor="rent" class="field-label-12">
+          <label htmlFor="rent" className="field-label-12">
             Entrez une courte description du navire
           </label>
           <textarea
@@ -123,7 +123,7 @@ function AddForm() {
             name="listing-short-description-2"
             placeholder=""
             required=""
-            class="textarea input"
+            className="textarea input"
           ></textarea>
         </div>
         <div className="checkbox_area">
@@ -194,7 +194,7 @@ function AddForm() {
           </label>
         </div>
         <div className="submit">
-          <input type="submit" value="Créer ma NFCard" class="button" />
+          <input type="submit" value="Créer ma NFCard" className="button" />
         </div>
       </form>
     </Fade>
@@ -206,13 +206,13 @@ function AddForm2() {
     <Fade bottom delay={100}>
       <form>
         <div className="block">
-          <div class="input_field">
-            <label htmlFor="Price-2-2" class="field-label-8">
+          <div className="input_field">
+            <label htmlFor="Price-2-2" className="field-label-8">
               Prix par jour
             </label>
             <input
               type="number"
-              class="input"
+              className="input"
               name="Price-2"
               placeholder="ex: 400€"
               id="Price-2-2"
@@ -222,9 +222,9 @@ function AddForm2() {
         </div>
         <div
           id="w-node-ddb22939-9143-5dde-0abd-cdf309fb324c-4789822a"
-          class="input_field"
+          className="input_field"
         >
-          <label htmlFor="rent" class="field-label-12">
+          <label htmlFor="rent" className="field-label-12">
             Entrez une courte description du navire
           </label>
           <textarea
@@ -232,7 +232,7 @@ function AddForm2() {
             name="listing-short-description-2"
             placeholder=""
             required=""
-            class="textarea input"
+            className="textarea input"
           ></textarea>
         </div>
         <div className="checkbox_area">
@@ -303,7 +303,7 @@ function AddForm2() {
           </label>
         </div>
         <div className="submit">
-          <input type="submit" value="Créer ma NFCard" class="button" />
+          <input type="submit" value="Créer ma NFCard" className="button" />
         </div>
       </form>
     </Fade>

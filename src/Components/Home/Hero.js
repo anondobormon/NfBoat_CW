@@ -11,7 +11,7 @@ export default function Hero() {
         <div className="hero_content">
           <Zoom>
             <div className="left">
-              <h2 class="title">La vie de votre bateau dans la poche</h2>
+              <h2 className="title">La vie de votre bateau dans la poche</h2>
 
               <p>
                 Le compagnon digital de navigation

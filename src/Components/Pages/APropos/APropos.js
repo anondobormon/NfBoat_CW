@@ -1,7 +1,7 @@
 import React from "react";
 import Fade from "react-reveal/Fade";
 import { images } from "../../../Assets/Assets";
-import Comming_Soon_Slider from "../../Home/Comming_Soon_Slider/Comming_Soon_Slider";
+import CommingSoonSlider from "../../Home/CommingSoonSlider/CommingSoonSlider";
 import Footer from "../../Layout/Footer/Footer";
 import Navbar from "../../Layout/Navbar/Navbar";
 import SenaryCard from "../../Shared/SenaryCard/SenaryCard";
@@ -226,7 +226,7 @@ export default function APropos() {
       <SenaryCard />
       <div className="space200"></div>
       <Fade>
-        <Comming_Soon_Slider />
+        <CommingSoonSlider />
       </Fade>
 
       <hr />

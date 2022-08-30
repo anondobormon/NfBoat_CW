@@ -27,25 +27,25 @@ export default function DetailsProduct() {
                 <ul>
                   <li>
                     <span>
-                      <i class="fa-solid fa-check"></i>
+                      <i className="fa-solid fa-check"></i>
                     </span>
                     Création d'un Wallet NFBoat
                   </li>
                   <li>
                     <span>
-                      <i class="fa-solid fa-check"></i>
+                      <i className="fa-solid fa-check"></i>
                     </span>
                     Enregistrement d'un bateau
                   </li>
                   <li>
                     <span>
-                      <i class="fa-solid fa-check"></i>
+                      <i className="fa-solid fa-check"></i>
                     </span>
                     Génération de contrats juridiques
                   </li>
                   <li>
                     <span>
-                      <i class="fa-solid fa-check"></i>
+                      <i className="fa-solid fa-check"></i>
                     </span>
                     Fonction contrôle en mer
                   </li>

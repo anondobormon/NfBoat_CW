@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { images } from "../../../Assets/Assets";
 import Footer from "../../Layout/Footer/Footer";
 import Navbar from "../../Layout/Navbar/Navbar";
-import Sub_Header from "../../Shared/Sub_Header/Sub_Header";
+import SubHeader from "../../Shared/SubHeader/SubHeader";
 import MetaData from "../../Utils/MetaData";
 import "./Order_confirmation.scss";
 
@@ -20,7 +20,7 @@ export default function OrderConfirmation() {
         <MetaData title={"Confirmation de commande | NFBoat"} />
 
         <Navbar />
-        <Sub_Header data={sub_header_data} />
+        <SubHeader data={sub_header_data} />
         <div className="space50"></div>
         <div className="container">
           <Fade bottom delay={100}>

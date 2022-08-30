@@ -9,22 +9,22 @@ import Error401 from "../Pages/Error/Error401";
 import NotFound from "../Pages/Error/NotFound";
 import Favoris from "../Pages/Favoris/Favoris";
 import Home from "../Pages/Home/Home";
-import HomeV2 from "../Pages/Home_v2/HomeV2";
+import HomeV2 from "../Pages/HomeV2/HomeV2";
 import JoinUs from "../Pages/JoinUs/JoinUs";
 import LocationBateaux from "../Pages/LocationBateaux/LocationBateaux";
 import LocEtReservations from "../Pages/LocEtReservations/LocEtReservations";
 import Messages from "../Pages/Messages/Messages";
 import MonCompte from "../Pages/MonCompte/MonCompte";
-import OrderConfirmation from "../Pages/Order_confirmation/OrderConfirmation";
-import PaypalCheckout from "../Pages/Paypal_Checkout/PaypalCheckout";
-import PolitiqueDeConfidentialite from "../Pages/Politique-de-confidentialite/PolitiqueDeConfidentialite";
+import OrderConfirmation from "../Pages/OrderConfirmation/OrderConfirmation";
+import PaypalCheckout from "../Pages/PaypalCheckout/PaypalCheckout";
+import PolitiqueDeConfidentialite from "../Pages/PolitiqueDeConfidentialite/PolitiqueDeConfidentialite";
+import PortBooking from "../Pages/PortBooking/PortBooking";
 import Ports from "../Pages/Ports/Ports";
-import PortBooking from "../Pages/Port_booking/PortBooking";
-import PublierUneAnnonce from "../Pages/Publier_une_annonce/PublierUneAnnonce";
+import PublierUneAnnonce from "../Pages/PublierUneAnnonce/PublierUneAnnonce";
 import Recherche from "../Pages/Recherche/Recherche";
-import RechercheDePorts from "../Pages/Recherche_de_ports/RechercheDePorts";
+import RechercheDePorts from "../Pages/RechercheDePorts/RechercheDePorts";
 import Search from "../Pages/Search/Search";
-import TermesConditions from "../Pages/Termes_conditions/TermesConditions";
+import TermesConditions from "../Pages/TermesConditions/TermesConditions";
 import Wallet from "../Pages/Wallet/Wallet";
 import WalletNfcard from "./WalletNfcard";
 
@@ -34,7 +34,6 @@ export default function Router() {
       <Route path="/" element={<Home />} />
       <Route path="/a-propos" element={<APropos />} />
       <Route path="/401" element={<Error401 />} />
-      <Route path="/notfound" element={<NotFound />} />
       <Route path="/checkout" element={<Checkout />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/product-details" element={<DetailsProduct />} />
@@ -61,6 +60,7 @@ export default function Router() {
       <Route path="/termes-conditions" element={<TermesConditions />} />
       <Route path="/wallet-nfcard" element={<WalletNfcard />} />
       <Route path="/wallet" element={<Wallet />} />
+      <Route path="*" element={<NotFound />} />
     </Routes>
   );
 }

@@ -52,8 +52,8 @@ class AccordionItem extends React.Component {
             <span>{index}. </span> {title}
           </h3>
           <span {...{ className: "accordion-item__icon" }}>
-            <div class="faq-icon-1"></div>
-            <div class="faq-icon-2"></div>
+            <div className="faq-icon-1"></div>
+            <div className="faq-icon-2"></div>
           </span>
         </div>
         <div {...{ className: "accordion-item__inner" }}>

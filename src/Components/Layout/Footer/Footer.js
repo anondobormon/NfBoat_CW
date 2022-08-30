@@ -34,16 +34,16 @@ export default function Footer() {
               <div className="social_icons">
                 <ul>
                   <li>
-                    <i class="fa-brands fa-facebook-f"></i>
+                    <i className="fa-brands fa-facebook-f"></i>
                   </li>
                   <li>
-                    <i class="fa-brands fa-twitter"></i>
+                    <i className="fa-brands fa-twitter"></i>
                   </li>
                   <li>
-                    <i class="fa-brands fa-instagram"></i>
+                    <i className="fa-brands fa-instagram"></i>
                   </li>
                   <li>
-                    <i class="fa-brands fa-linkedin-in"></i>
+                    <i className="fa-brands fa-linkedin-in"></i>
                   </li>
                 </ul>
               </div>
@@ -100,7 +100,7 @@ export default function Footer() {
                   <h4>
                     Marseille, France
                     <span>
-                      <i class="fa-solid fa-arrow-right"></i>
+                      <i className="fa-solid fa-arrow-right"></i>
                     </span>
                   </h4>
                   <div className="address_text"> Adresse à rajouter</div>
@@ -112,7 +112,7 @@ export default function Footer() {
           <hr />
 
           <div className="copy_write">
-            <div class="text-center">Made with ♥ by ©NFBoat</div>
+            <div className="text-center">Made with ♥ by ©NFBoat</div>
           </div>
         </div>
       </div>

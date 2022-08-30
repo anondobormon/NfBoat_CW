@@ -1,8 +1,8 @@
 import React from "react";
 import { Fade } from "react-reveal";
-import "./Sub_Header.scss";
+import "./SubHeader.scss";
 
-export default function Sub_Header({ data }) {
+export default function SubHeader({ data }) {
   return (
     <div className="sub_header">
       <div className="container">

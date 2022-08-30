@@ -3,7 +3,7 @@ import { Fade } from "react-reveal";
 import { images } from "../../../Assets/Assets";
 import Footer from "../../Layout/Footer/Footer";
 import Navbar from "../../Layout/Navbar/Navbar";
-import Berth_Card from "../../Shared/Berth_Card/Berth_Card";
+import BerthCard from "../../Shared/BerthCard/BerthCard";
 import MetaData from "../../Utils/MetaData";
 import Accordion from "../Contact/Accordion";
 import "./Port_booking.scss";
@@ -48,7 +48,7 @@ export default function PortBooking() {
           <div className="grid_col_3">
             {Berth_Data.map((item, index) => (
               <Fade bottom>
-                <Berth_Card key={index} data={item} />
+                <BerthCard key={index} data={item} />
               </Fade>
             ))}
           </div>

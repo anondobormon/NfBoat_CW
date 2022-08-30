@@ -4,11 +4,11 @@ import { Link } from "react-router-dom";
 import { images } from "../../../Assets/Assets";
 import Footer from "../../Layout/Footer/Footer";
 import Navbar from "../../Layout/Navbar/Navbar";
-import Range from "../../Shared/Range_Slider/Range";
-import Ship_card from "../../Shared/Ship_card/Ship_card";
+import Range from "../../Shared/RangeSlider/Range";
+import ShipCard from "../../Shared/ShipCard/ShipCard";
 import MetaData from "../../Utils/MetaData";
-import "../LocationBateaux/Location_bateaux.scss";
-import "../Recherche_de_ports/Recherche_de_ports.scss";
+import "../LocationBateaux/LocationBateaux.scss";
+import "../RechercheDePorts/RechercheDePorts.scss";
 
 const BoatData = [
   {
@@ -72,31 +72,31 @@ export default function Recherche() {
             <div className="search_items">
               <div className="item">
                 <span className="icon">
-                  <i class="fa-solid fa-location-dot"></i>
+                  <i className="fa-solid fa-location-dot"></i>
                 </span>
                 <p>Ville ou Port</p>
                 <span className="arrow_icon">
-                  <i class="fa-solid fa-angle-right"></i>
+                  <i className="fa-solid fa-angle-right"></i>
                 </span>
                 <div className="details_element">Ville ou Port</div>
               </div>
               <div className="item">
                 <span className="icon">
-                  <i class="fa-solid fa-calendar-days"></i>
+                  <i className="fa-solid fa-calendar-days"></i>
                 </span>
                 <p>Dates</p>
                 <span className="arrow_icon">
-                  <i class="fa-solid fa-angle-right"></i>
+                  <i className="fa-solid fa-angle-right"></i>
                 </span>
                 <div className="details_element">Ville ou Port</div>
               </div>
               <div className="item">
                 <span className="icon">
-                  <i class="fa-solid fa-money-check-dollar"></i>
+                  <i className="fa-solid fa-money-check-dollar"></i>
                 </span>
                 <p>A louer</p>
                 <span className="arrow_icon">
-                  <i class="fa-solid fa-angle-right"></i>
+                  <i className="fa-solid fa-angle-right"></i>
                 </span>
                 <div className="details_element">
                   <Link to="/">A louer</Link>
@@ -105,11 +105,11 @@ export default function Recherche() {
               </div>
               <div className="item">
                 <span className="icon">
-                  <i class="fa-solid fa-house"></i>
+                  <i className="fa-solid fa-house"></i>
                 </span>
                 <p>Type de bateau</p>
                 <span className="arrow_icon">
-                  <i class="fa-solid fa-angle-right"></i>
+                  <i className="fa-solid fa-angle-right"></i>
                 </span>
                 <div className="details_element">
                   <Link to="/">Bateau à moteur</Link>
@@ -128,12 +128,12 @@ export default function Recherche() {
               </div>
             </div>
           </Fade>
-          <div class="success">
+          <div className="success">
             <Fade bottom delay={100}>
               <div>Thank you! Your submission has been received!</div>
             </Fade>
           </div>
-          <div class="form_fail">
+          <div className="form_fail">
             <Fade bottom delay={100}>
               <div>Oops! Something went wrong while submitting the form.</div>
             </Fade>
@@ -143,7 +143,7 @@ export default function Recherche() {
 
         <div className="grid_col_3">
           {Ship_Data.map((item, index) => (
-            <Ship_card key={index} data={item} />
+            <ShipCard key={index} data={item} />
           ))}
         </div>
 

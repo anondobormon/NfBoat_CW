@@ -4,10 +4,10 @@ import { Link } from "react-router-dom";
 import { images } from "../../../Assets/Assets";
 import Footer from "../../Layout/Footer/Footer";
 import Navbar from "../../Layout/Navbar/Navbar";
-import Ship_card from "../../Shared/Ship_card/Ship_card";
-import Tenant_card from "../../Shared/Tenant_card/Tenant_card";
+import ShipCard from "../../Shared/ShipCard/ShipCard";
+import TenantCard from "../../Shared/TenantCard/TenantCard";
 import MetaData from "../../Utils/MetaData";
-import "./Location_bateaux.scss";
+import "./LocationBateaux.scss";
 
 export default function LocationBateaux() {
   return (
@@ -52,31 +52,31 @@ export default function LocationBateaux() {
           <div className="search_items">
             <div className="item">
               <span className="icon">
-                <i class="fa-solid fa-location-dot"></i>
+                <i className="fa-solid fa-location-dot"></i>
               </span>
               <p>Ville ou Port</p>
               <span className="arrow_icon">
-                <i class="fa-solid fa-angle-right"></i>
+                <i className="fa-solid fa-angle-right"></i>
               </span>
               <div className="details_element">Ville ou Port</div>
             </div>
             <div className="item">
               <span className="icon">
-                <i class="fa-solid fa-calendar-days"></i>
+                <i className="fa-solid fa-calendar-days"></i>
               </span>
               <p>Dates</p>
               <span className="arrow_icon">
-                <i class="fa-solid fa-angle-right"></i>
+                <i className="fa-solid fa-angle-right"></i>
               </span>
               <div className="details_element">Ville ou Port</div>
             </div>
             <div className="item">
               <span className="icon">
-                <i class="fa-solid fa-money-check-dollar"></i>
+                <i className="fa-solid fa-money-check-dollar"></i>
               </span>
               <p>A louer</p>
               <span className="arrow_icon">
-                <i class="fa-solid fa-angle-right"></i>
+                <i className="fa-solid fa-angle-right"></i>
               </span>
               <div className="details_element">
                 <Link to="/">A louer</Link>
@@ -85,11 +85,11 @@ export default function LocationBateaux() {
             </div>
             <div className="item">
               <span className="icon">
-                <i class="fa-solid fa-house"></i>
+                <i className="fa-solid fa-house"></i>
               </span>
               <p>Type de bateau</p>
               <span className="arrow_icon">
-                <i class="fa-solid fa-angle-right"></i>
+                <i className="fa-solid fa-angle-right"></i>
               </span>
               <div className="details_element">
                 <Link to="/">Bateau à moteur</Link>
@@ -108,12 +108,12 @@ export default function LocationBateaux() {
             </div>
           </div>
         </Fade>
-        <div class="success">
+        <div className="success">
           <Fade bottom delay={200}>
             <div>Thank you! Your submission has been received!</div>
           </Fade>
         </div>
-        <div class="form_fail">
+        <div className="form_fail">
           <Fade bottom delay={200}>
             <div>Oops! Something went wrong while submitting the form.</div>
           </Fade>
@@ -143,7 +143,7 @@ export default function LocationBateaux() {
           <Fade bottom>
             <div className="grid_col_3">
               {Ship_Data.map((item, index) => (
-                <Ship_card key={index} data={item} />
+                <ShipCard key={index} data={item} />
               ))}
             </div>
           </Fade>
@@ -152,7 +152,7 @@ export default function LocationBateaux() {
 
       <div className="space100"></div>
       <div className="container">
-        <Tenant_card />
+        <TenantCard />
       </div>
 
       <div className="space125"></div>

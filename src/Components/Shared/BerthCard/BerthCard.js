@@ -1,27 +1,26 @@
 import React from "react";
 import { Fade } from "react-reveal";
 import { images } from "../../../Assets/Assets";
-import "./Location_card.scss";
+import "./BerthCard.scss";
 
-export default function Location_card() {
+export default function BerthCard({ data }) {
   return (
-    <Fade delay={100}>
-      <div className="location_card">
+    <Fade bottom>
+      <div className="berth_card">
         <div className="left">
           <div className="image_wrapper">
-            <img src={images.Image_7} alt="" />
-            <div className="sale_button">A vendre</div>
+            <img src={data.img} alt="" />
           </div>
         </div>
 
         <div className="right">
-          <h3>0.00€ / jour</h3>
-          <h4>Nom ou modèle du bateau</h4>
+          <h3>{data.price}</h3>
+          <h4>{data.sub_title}</h4>
           <div className="address">
             <span>
               <img src={images.Location} alt="" />
             </span>
-            <p>Address ou port</p>
+            <p>{data.address}</p>
           </div>
 
           <hr />
@@ -29,13 +28,13 @@ export default function Location_card() {
           <div className="icon_wrapper">
             <li>
               <span>
-                <img src={images.Tie_head} alt="" />
+                <img src={images.Bx_store} alt="" />
               </span>
               Avec
             </li>
             <li>
               <span>
-                <img src={images.King_bed} alt="" />
+                <img src={images.Shower_solid} alt="" />
               </span>
               3
             </li>

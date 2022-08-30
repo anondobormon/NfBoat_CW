@@ -5,7 +5,7 @@ import { images } from "../../../Assets/Assets";
 import Footer from "../../Layout/Footer/Footer";
 import Navbar from "../../Layout/Navbar/Navbar";
 import MetaData from "../../Utils/MetaData";
-import "./Mon_compte.scss";
+import "./MonCompte.scss";
 
 export default function MonCompte() {
   const [toggle, setToggle] = useState("cards");
@@ -189,7 +189,7 @@ function Privacy({ title, data, setToggle }) {
                   Mon compte
                 </Link>{" "}
                 <span>
-                  <i class="fa-solid fa-chevron-right"></i>
+                  <i className="fa-solid fa-chevron-right"></i>
                 </span>
               </li>
 
@@ -229,7 +229,7 @@ function Information({ title, data, setToggle }) {
                   Mon compte
                 </Link>{" "}
                 <span>
-                  <i class="fa-solid fa-chevron-right"></i>
+                  <i className="fa-solid fa-chevron-right"></i>
                 </span>
               </li>
 

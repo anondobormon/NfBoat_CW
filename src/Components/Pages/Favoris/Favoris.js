@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 import { images } from "../../../Assets/Assets";
 import Footer from "../../Layout/Footer/Footer";
 import Navbar from "../../Layout/Navbar/Navbar";
-import Location_card from "../../Shared/Location_Card/Location_card";
-import Port_card from "../../Shared/Port_Card/Port_card";
-import Sub_header_link from "../../Shared/Sub_Header_Link/Sub_header_link";
+import Location_card from "../../Shared/LocationCard/LocationCard";
+import PortCard from "../../Shared/PortCard/PortCard";
+import SubHeaderLink from "../../Shared/SubHeaderLink/SubHeaderLink";
 import MetaData from "../../Utils/MetaData";
 import "./Favoris.scss";
 
@@ -17,7 +17,7 @@ export default function Favoris() {
       <MetaData title={"Favoris | NFBoat"} />
 
       <Navbar />
-      <Sub_header_link link={"favoris"} />
+      <SubHeaderLink link={"favoris"} />
 
       <div className="container-1179px">
         <div className="toggle_wrapper">
@@ -50,7 +50,7 @@ export default function Favoris() {
           </div>
         </Fade>
 
-        {toggle === "locations" ? <Location_card /> : <Port_card />}
+        {toggle === "locations" ? <Location_card /> : <PortCard />}
       </div>
 
       <div className="space100"></div>

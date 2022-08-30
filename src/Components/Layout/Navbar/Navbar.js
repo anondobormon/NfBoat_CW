@@ -38,7 +38,7 @@ export default function Navbar() {
                 <Link to="/">
                   Informations
                   <span>
-                    <i class="fa-solid fa-chevron-down"></i>
+                    <i className="fa-solid fa-chevron-down"></i>
                   </span>
                 </Link>
 
@@ -106,7 +106,7 @@ export default function Navbar() {
                     >
                       Informations
                       <span>
-                        <i class="fa-solid fa-chevron-down"></i>
+                        <i className="fa-solid fa-chevron-down"></i>
                       </span>
                     </div>
                   </li>

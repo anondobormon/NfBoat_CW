@@ -1,10 +1,10 @@
 import React from "react";
 import { images } from "../../../Assets/Assets";
-import "./Ship_card.scss";
+import "./ShipCard.scss";
 
 import { Fade } from "react-reveal";
 
-export default function Ship_card({ data }) {
+export default function ShipCard({ data }) {
   return (
     <Fade bottom>
       <div className="ship_card">

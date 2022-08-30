@@ -1,0 +1,137 @@
+.horizontal {
+  border: 1px solid red;
+  max-width: 500px;
+  margin: 0 auto;
+  //   overflow: hidden;
+  padding: 5px;
+  height: 900vh;
+  margin-top: 50vh;
+
+  .content_wrapper1 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: relative;
+    flex-direction: column;
+
+    .left,
+    .right {
+      width: 100%;
+
+      border: 1px solid black;
+
+      .img_wrapper {
+        width: 100%;
+        overflow: hidden;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      .img_wrapper0 {
+      }
+    }
+
+    .left {
+      //   margin-top: 70vh;
+
+      flex: 1;
+      top: 100px;
+      position: sticky;
+      padding: 10px;
+    }
+    .img_wrapper2 {
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      // opacity: 0.5;
+      z-index: -22222;
+      padding: 50px;
+
+      img {
+        border-radius: 40px;
+      }
+    }
+    .right {
+      margin-top: -80vh;
+      flex: 1;
+      //   height: 600vh;
+      border: 5px solid rgb(60, 0, 255);
+      position: relative;
+      padding: 50px;
+      padding-bottom: 80vh;
+
+      .img_wrapper {
+        border-radius: 50px;
+      }
+    }
+  }
+  .discover_area {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: relative;
+
+    .left {
+      flex: 1;
+      top: 150px;
+      position: sticky;
+
+      h2 {
+        font-size: 32px;
+        font-weight: 600;
+      }
+      p {
+        text-align: left;
+        margin: 0;
+        font-size: 20px;
+      }
+    }
+    .right {
+      flex: 1;
+      padding-top: 70vh;
+
+      .card {
+        padding-bottom: 20vh;
+        .title {
+          text-align: left;
+          display: flex;
+          align-items: center;
+
+          h2 {
+            margin-top: 0px;
+            margin-right: 10px;
+            margin-bottom: 0px;
+            font-weight: 700;
+
+            background-image: linear-gradient(
+              128deg,
+              #60aef8,
+              #65d3f4 50%,
+              #45f1ff
+            );
+            font-size: 60px;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+
+          h3 {
+            font-size: 25px;
+            font-weight: 600;
+            margin-top: 10px;
+            color: #000;
+          }
+        }
+        p {
+          text-align: left;
+          margin: 0 0;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}

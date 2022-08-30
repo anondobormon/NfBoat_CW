@@ -135,16 +135,16 @@ export default function Contact() {
                 <div className="social_icons">
                   <ul>
                     <li>
-                      <i class="fa-brands fa-facebook-f"></i>
+                      <i className="fa-brands fa-facebook-f"></i>
                     </li>
                     <li>
-                      <i class="fa-brands fa-twitter"></i>
+                      <i className="fa-brands fa-twitter"></i>
                     </li>
                     <li>
-                      <i class="fa-brands fa-instagram"></i>
+                      <i className="fa-brands fa-instagram"></i>
                     </li>
                     <li>
-                      <i class="fa-brands fa-linkedin-in"></i>
+                      <i className="fa-brands fa-linkedin-in"></i>
                     </li>
                   </ul>
                 </div>
@@ -213,8 +213,12 @@ export default function Contact() {
                   className="button"
                 />
                 <div className="success">
-                  <img src={images.IconSuccess} class="image_success" />
-                  <div class="success-message-text">
+                  <img
+                    src={images.IconSuccess}
+                    className="image_success"
+                    alt=""
+                  />
+                  <div className="success-message-text">
                     Your message has been submitted. <br />
                     We will get back to you within 24-48 hours.
                   </div>
@@ -228,7 +232,7 @@ export default function Contact() {
 
           <div className="faq_section">
             <Fade>
-              <div class="faq-header">
+              <div className="faq-header">
                 <h2>Foire aux questions</h2>
                 <p>Trouvez les réponses à vos questions dans notre FAQ</p>
               </div>
