@@ -1,5 +1,6 @@
 import React from "react";
 import { Zoom } from "react-reveal";
+import { Link } from "react-router-dom";
 import "./TenantCard.scss";
 
 export default function TenantCard() {
@@ -14,7 +15,9 @@ export default function TenantCard() {
               vos prochaines vacances. Avec ou sans Skipper, et au meilleur
               prix.
             </div>
-            <button className="button">Louer un bateau</button>
+            <Link to="/recherche" className="button">
+              Louer un bateau
+            </Link>
           </div>
         </Zoom>
         <Zoom>
@@ -25,7 +28,9 @@ export default function TenantCard() {
               services comprennent la gestion et l&#x27;assurance de toute la
               location.
             </p>
-            <button className="button">Louer un bateau</button>
+            <Link to="/join-us" className="button">
+              Publier une annonce
+            </Link>
           </div>
         </Zoom>
       </div>

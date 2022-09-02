@@ -12,9 +12,9 @@ export default function PortCard() {
             <h3>0.00€ / jour</h3>
             <h4>Nom ou modèle du bateau</h4>
             <div className="address">
-              <span>
+              <div className="img_wrapper">
                 <img src={images.Location} alt="" />
-              </span>
+              </div>
               <p>Address ou port</p>
             </div>
           </div>

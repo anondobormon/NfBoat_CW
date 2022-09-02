@@ -35,90 +35,78 @@ export default function MonCompte() {
 
           {toggle === "cards" && (
             <div className="grid_col_3">
-              <div className="account_card">
+              <div
+                onClick={() => setToggle("Informations personnelles")}
+                className="account_card"
+              >
                 <div className="icon_wrapper">
                   <img src={images.bx_id_card} alt="" />
                 </div>
-                <div
-                  onClick={() => setToggle("Informations personnelles")}
-                  className="account_title"
-                >
-                  Informations personnelles
-                </div>
+                <div className="account_title">Informations personnelles</div>
                 <p>
                   Fournissez des renseignements personnels et indiquez comment
                   nous pouvons vous joindre
                 </p>
               </div>
-              <div className="account_card">
+              <div
+                onClick={() => setToggle("Connexion et sécurité")}
+                className="account_card"
+              >
                 <div className="icon_wrapper">
                   <img src={images.charm_shield} alt="" />
                 </div>
-                <div
-                  onClick={() => setToggle("Connexion et sécurité")}
-                  className="account_title"
-                >
-                  Connexion et sécurité
-                </div>
+                <div className="account_title">Connexion et sécurité</div>
                 <p>
                   Mettez à jour votre mot de passe et sécurisez votre compte
                 </p>
               </div>
-              <div className="account_card">
+              <div
+                onClick={() => setToggle("Paiements et versements")}
+                className="account_card"
+              >
                 <div className="icon_wrapper">
                   <img src={images.ion_cash} alt="" />
                 </div>
-                <div
-                  onClick={() => setToggle("Paiements et versements")}
-                  className="account_title"
-                >
-                  Paiements et versements
-                </div>
+                <div className="account_title">Paiements et versements</div>
                 <p>
                   Consultez les paiements, les versements, les coupons, les
                   cartes cadeaux et les taxes
                 </p>
               </div>
-              <div className="account_card">
+              <div
+                onClick={() => setToggle("Notifications")}
+                className="account_card"
+              >
                 <div className="icon_wrapper">
                   <img src={images.ci_notification} alt="" />
                 </div>
-                <div
-                  onClick={() => setToggle("Notifications")}
-                  className="account_title"
-                >
-                  Notifications
-                </div>
+                <div className="account_title">Notifications</div>
                 <p>
                   Choisissez vos préférences de notification et la façon dont
                   vous souhaitez être contacté
                 </p>
               </div>
-              <div className="account_card">
+              <div
+                onClick={() => setToggle("Vie privée et partage")}
+                className="account_card"
+              >
                 <div className="icon_wrapper">
                   <img src={images.akar_icons_eye} alt="" />
                 </div>
-                <div
-                  onClick={() => setToggle("Vie privée et partage")}
-                  className="account_title"
-                >
-                  Vie privée et partage
-                </div>
+                <div className="account_title">Vie privée et partage</div>
                 <p>
                   Contrôlez les applications connectées, ce que vous partagez et
                   qui y a accès
                 </p>
               </div>
-              <div className="account_card">
+              <div
+                onClick={() => setToggle("Préférences globales")}
+                className="account_card"
+              >
                 <div className="icon_wrapper">
                   <img src={images.lucide_settings} alt="" />
                 </div>
-                <div
-                  onClick={() => setToggle("Préférences globales")}
-                  className="account_title"
-                >
-                  Préférences globales
-                </div>
+                <div className="account_title">Préférences globales</div>
                 <p>
                   Définissez votre langue, votre devise et votre fuseau horaire
                   par défaut

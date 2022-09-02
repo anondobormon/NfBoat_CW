@@ -93,12 +93,13 @@
           width: 100%;
           box-shadow: 0 3px 20px 0 rgb(8 15 52 / 6%);
           opacity: 0;
-          visibility: hidden;
+          // visibility: hidden;
           display: flex;
           flex-direction: column;
           transition: all 0.3s;
-          z-index: 2222;
-          background-color: #fff;
+          z-index: 555555555;
+          background-color: #fff !important;
+
           a {
             color: #8d8d91;
             font-size: 17px;
@@ -145,6 +146,7 @@
 
   .suggestions {
     text-align: center;
+    z-index: -111;
 
     h3 {
       font-size: 32px;

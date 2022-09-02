@@ -9,14 +9,14 @@ export default function SubHeaderLink({ mon, link }) {
       <Fade>
         <ul>
           <li>
-            <Link to={`/${mon && mon}`}>Mon compte</Link>{" "}
+            <Link to={`/`}>Mon compte</Link>{" "}
             <span>
               <i className="fa-solid fa-chevron-right"></i>
             </span>
           </li>
 
           <li>
-            <Link to="/">{link}</Link>
+            <Link to={`/${link}`}>{link}</Link>
           </li>
         </ul>
       </Fade>

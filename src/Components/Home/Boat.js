@@ -38,6 +38,10 @@ export default function Boat() {
         <Fade bottom>
           <h3 className="boat_title">Une carte, un bateau</h3>
         </Fade>
+        <p className="sub_title">
+          Stockez tous les documents administratifs de votre bateau dans un
+          coffre fort numérique grâce à la NFCard
+        </p>
         <div className="space200"></div>
         <div className="grid_col_3">
           {Demo_data.map((item, i) => (

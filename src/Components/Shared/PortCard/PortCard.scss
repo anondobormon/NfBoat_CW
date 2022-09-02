@@ -67,6 +67,7 @@
     overflow: hidden;
     border-radius: 24px;
     border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
 
     img {
       width: 100%;
@@ -90,6 +91,24 @@
   }
 }
 
+@media screen and (max-width: 992px) {
+  .ports_card {
+    // flex-direction: column;
+
+    .right {
+      width: 100%;
+
+      .image_wrapper {
+        height: 100%;
+      }
+
+      img {
+        scale: 1;
+        height: 100%;
+      }
+    }
+  }
+}
 @media screen and (max-width: 758px) {
   .ports_card {
     flex-direction: column;
@@ -97,6 +116,11 @@
     .right {
       width: 100%;
       border-radius: 24px;
+
+      img {
+        height: 100%;
+        scale: 1.09;
+      }
     }
   }
 }

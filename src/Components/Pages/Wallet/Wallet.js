@@ -47,6 +47,7 @@ export default function Wallet() {
               Transférer vers mon compte
             </button>
           </Fade>
+          <div className="space25"></div>
           <Fade bottom delay={200}>
             <Link to="/">Consulter l'historique</Link>
           </Fade>
@@ -242,7 +243,7 @@ export default function Wallet() {
 
             <Fade bottom delay={100}>
               <div className="grid_col_3">
-                <div className="account_card">
+                <Link to="/publier-une-annonce" className="account_card">
                   <div className="icon_wrapper">
                     <img src={images.bx_id_card} alt="" />
                   </div>
@@ -251,32 +252,28 @@ export default function Wallet() {
                     Publiez une annonce de location ou de vente de votre bateau
                     automatiquement avec votre NFCard
                   </p>
-                </div>
-                <div className="account_card">
+                </Link>
+                <div
+                  onClick={() => setInfoDetails("Ajouter un document")}
+                  className="account_card"
+                >
                   <div className="icon_wrapper">
                     <img src={images.carbon_document} alt="" />
                   </div>
-                  <div
-                    onClick={() => setInfoDetails("Ajouter un document")}
-                    className="account_title"
-                  >
-                    Ajouter un document
-                  </div>
+                  <div className="account_title">Ajouter un document</div>
                   <p>
                     Ajoutez un document (assurance, acte de francisation,
                     facture d'entretien...) a une de vos NFCards
                   </p>
                 </div>
-                <div className="account_card">
+                <div
+                  onClick={() => setInfoDetails("Contrôle en mer")}
+                  className="account_card"
+                >
                   <div className="icon_wrapper">
                     <img src={images.maki_police} alt="" />
                   </div>
-                  <div
-                    onClick={() => setInfoDetails("Contrôle en mer")}
-                    className="account_title"
-                  >
-                    Contrôle en mer
-                  </div>
+                  <div className="account_title">Contrôle en mer</div>
                   <p>
                     Configurez la fonction Contrôle en mer en téléchargeant vos
                     documents de navigation

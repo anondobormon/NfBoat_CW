@@ -108,19 +108,9 @@ export default function LocationBateaux() {
             </div>
           </div>
         </Fade>
-        <div className="success">
-          <Fade bottom delay={200}>
-            <div>Thank you! Your submission has been received!</div>
-          </Fade>
-        </div>
-        <div className="form_fail">
-          <Fade bottom delay={200}>
-            <div>Oops! Something went wrong while submitting the form.</div>
-          </Fade>
-        </div>
       </div>
 
-      <div className="space75"></div>
+      <div className="space150"></div>
 
       <hr />
 

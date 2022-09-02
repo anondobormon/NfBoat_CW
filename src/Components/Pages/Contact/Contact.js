@@ -75,14 +75,17 @@ export default function Contact() {
 
         <Navbar />
 
-        <div className="sub_header">
+        <div className="sub_header_contact">
+          <div className="sub_header_bg"></div>
           <div className="container">
             <div className="sub_header_wrapper">
               <Fade bottom>
                 <h2 className="header_title">Contactez-nous</h2>
               </Fade>
               <Fade delay={100} bottom>
-                <p>Nous serions heureux de répondre à vos questions</p>
+                <p className="sub_title">
+                  Nous serions heureux de répondre à vos questions
+                </p>
               </Fade>
               <div className="contact_card">
                 <Fade delay={100} bottom>
@@ -128,9 +131,7 @@ export default function Contact() {
           <section className="message">
             <Fade>
               <div className="left">
-                <h2>
-                  Vous préférez nous <br /> laisser un message ?
-                </h2>
+                <h2>Vous préférez nous laisser un message ?</h2>
                 <p>Nous vous répondrons via nos réseaux sociaux</p>
                 <div className="social_icons">
                   <ul>
