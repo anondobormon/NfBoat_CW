@@ -214,7 +214,7 @@
       align-items: center;
 
       .search {
-        position: relative;
+        // position: relative;
 
         .search_icon {
           font-size: 32px;
@@ -232,8 +232,9 @@
 
         .search_bar {
           position: absolute;
-          top: 85px;
-          right: -80%;
+          top: 115px;
+          left: 50%;
+          transform: translateX(-50%);
           padding: 30px;
           border-radius: 30px;
           background-color: #fff;
@@ -253,7 +254,7 @@
             gap: 20px;
 
             .input {
-              width: 300px;
+              max-width: 300px;
             }
 
             .button {
@@ -287,26 +288,90 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      padding: 12px;
       width: 45px;
       height: 45px;
       border-radius: 10px;
       gap: 5px;
-      background-color: #000;
+      background-color: rgb(0, 0, 0);
       display: none;
       z-index: 9999;
+      transition: all 0.3s;
 
-      .menu_icon {
-        width: 100%;
-        max-height: 2px;
-        min-height: 2px;
-        padding: 0px;
-        background-color: #fff;
+      &:hover {
+        background-color: #0099c2;
+        scale: 0.96;
+      }
+
+      /* Menu Button 5 */
+      #menu_button_5 {
+        height: 20px;
+        width: 20px;
+        position: relative;
+      }
+
+      #menu_button_5:hover {
+        cursor: pointer;
+      }
+
+      #menu_button_5 span {
+        background: white;
+        transform: translateY(-50%) rotate(0deg);
+        position: absolute;
+        width: 20px;
+        height: 2px;
+        transition: top 0.1s ease 0.3s, transform 0.3s ease,
+          background 0.1s ease 0.3s;
+        margin: 0 auto;
+      }
+
+      #menu_button_5.clicked span {
+        transition: top 0.1s ease, transform 0.3s ease 0.1s,
+          background 0.1s ease;
+      }
+
+      #menu_button_5 span:nth-child(1) {
+        top: 10%;
+      }
+
+      #menu_button_5 span:nth-child(2) {
+        top: 50%;
+      }
+
+      #menu_button_5 span:nth-child(3) {
+        top: 90%;
+      }
+
+      #menu_button_5.clicked span:nth-child(1) {
+        top: 50%;
+        transform: translateY(-50%) rotate(315deg);
+      }
+
+      #menu_button_5.clicked span:nth-child(2) {
+        transform: translateY(-50%) rotate(405deg);
+      }
+
+      #menu_button_5.clicked span:nth-child(3) {
+        top: 50%;
+        transform: translateY(-50%) rotate(405deg);
+      }
+    }
+  }
+
+  // --------------
+}
+
+@media screen and (max-width: 758px) {
+  .navbar {
+    .search {
+      form {
+        flex-direction: column;
+        .input {
+          height: 61px;
+        }
       }
     }
   }
 }
-
 @media screen and (max-width: 992px) {
   .navbar {
     .container {

@@ -44,7 +44,7 @@
       margin-top: 80px;
 
       .container_750px {
-        width: 750px;
+        max-width: 750px;
         border-radius: 20px;
         background-color: #fff;
 
@@ -213,6 +213,9 @@
   .recherche_de_ports {
     .grid_col_3 {
       grid-template-columns: 1fr 1fr;
+    }
+    .grid_col_2 {
+      grid-template-columns: 1fr !important;
     }
   }
 }

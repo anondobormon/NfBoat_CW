@@ -1,3 +1,7 @@
+import { TextField } from "@mui/material";
+import { LocalizationProvider, MobileDatePicker } from "@mui/x-date-pickers";
+import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
+import dayjs from "dayjs";
 import React, { useState } from "react";
 import { Fade } from "react-reveal";
 import { Link } from "react-router-dom";
@@ -44,6 +48,7 @@ const BoatData = [
 
 export default function Recherche() {
   const [showModal, setShowModal] = useState(false);
+  const [value, setValue] = useState(dayjs());
 
   return (
     <div className="recherche_de_ports">
@@ -84,15 +89,23 @@ export default function Recherche() {
                 <span className="icon">
                   <i className="fa-solid fa-calendar-days"></i>
                 </span>
-                <p>Dates</p>
+                <LocalizationProvider dateAdapter={AdapterDayjs}>
+                  <MobileDatePicker
+                    value={value}
+                    minDate={dayjs("2017-01-01")}
+                    onChange={(newValue) => {
+                      setValue(newValue);
+                    }}
+                    renderInput={(params) => <TextField {...params} />}
+                  />
+                </LocalizationProvider>
                 <span className="arrow_icon">
                   <i className="fa-solid fa-angle-right"></i>
                 </span>
-                <div className="details_element">Ville ou Port</div>
               </div>
               <div className="item">
                 <span className="icon">
-                  <i className="fa-solid fa-money-check-dollar"></i>
+                  <i class="fa-solid fa-key"></i>
                 </span>
                 <p>A louer</p>
                 <span className="arrow_icon">
@@ -105,7 +118,7 @@ export default function Recherche() {
               </div>
               <div className="item">
                 <span className="icon">
-                  <i className="fa-solid fa-house"></i>
+                  <i class="fa-solid fa-sailboat"></i>
                 </span>
                 <p>Type de bateau</p>
                 <span className="arrow_icon">
@@ -128,18 +141,8 @@ export default function Recherche() {
               </div>
             </div>
           </Fade>
-          <div className="success">
-            <Fade bottom delay={100}>
-              <div>Thank you! Your submission has been received!</div>
-            </Fade>
-          </div>
-          <div className="form_fail">
-            <Fade bottom delay={100}>
-              <div>Oops! Something went wrong while submitting the form.</div>
-            </Fade>
-          </div>
         </div>
-        <div className="space100"></div>
+        <div className="space200"></div>
 
         <div className="grid_col_3">
           {Ship_Data.map((item, index) => (

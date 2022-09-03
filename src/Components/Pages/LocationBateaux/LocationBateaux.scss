@@ -54,6 +54,9 @@
 
   .boat_search-area {
     text-align: center;
+    position: relative;
+
+    z-index: 2;
 
     .search_items {
       display: flex;
@@ -97,7 +100,6 @@
           display: flex;
           flex-direction: column;
           transition: all 0.3s;
-          z-index: 555555555;
           background-color: #fff !important;
 
           a {
@@ -121,6 +123,9 @@
 
           p {
             color: #0099c2;
+          }
+          .css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
+            color: #0099c2 !important;
           }
 
           .arrow_icon {
@@ -146,7 +151,9 @@
 
   .suggestions {
     text-align: center;
-    z-index: -111;
+    position: relative;
+
+    z-index: 1;
 
     h3 {
       font-size: 32px;
@@ -163,6 +170,9 @@
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
     width: 100%;
+    position: relative;
+
+    z-index: 1;
   }
 
   .services {
@@ -212,6 +222,26 @@
       }
     }
   }
+}
+
+.MuiDialogContent-root {
+  .css-j7qwjs {
+    .css-1v994a0 {
+      font-size: 15px;
+    }
+  }
+}
+
+.css-1d3z3hw-MuiOutlinedInput-notchedOutline {
+  border: none !important;
+}
+.css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
+  width: 150px !important;
+}
+.css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
+  padding: 0 0 !important;
+  height: 20px !important;
+  transition: all 0.3s;
 }
 
 @media screen and (max-width: 992px) {

@@ -176,11 +176,16 @@ export default function Navbar() {
 
             <div
               onClick={() => setShowMenu(!showMenu)}
-              className="menu_icon_wrapper"
+              className="menu_icon_wrapper active"
             >
-              <div className="menu_icon _top"></div>
-              <div className="menu_icon _middle"></div>
-              <div className="menu_icon _bottom"></div>
+              <div
+                id="menu_button_5"
+                class={`menu-btn-5 ${showMenu && "clicked"}`}
+              >
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
             </div>
 
             <div className="search_button">

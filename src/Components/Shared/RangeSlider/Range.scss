@@ -1,10 +1,11 @@
 .container4 {
   height: 120px;
-  width: 680px;
+  max-width: 680px;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
+  margin-bottom: 20px;
   .slider {
     position: relative;
     width: 650px;
@@ -123,5 +124,16 @@
     margin-top: 4px;
     pointer-events: all;
     position: relative;
+  }
+}
+
+@media screen and (max-width: 758px) {
+  .container4 {
+    .slider {
+      width: 300px;
+    }
+    .thumb {
+      width: 300px;
+    }
   }
 }
