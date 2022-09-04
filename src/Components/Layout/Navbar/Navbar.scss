@@ -269,7 +269,7 @@
 
       .search_button {
         button {
-          padding: 16px 26px;
+          padding: 12px 26px !important;
           background-color: #000;
           font-size: 16px;
           transition: 300ms ease;
@@ -415,16 +415,22 @@
             align-items: center;
             justify-content: center;
 
-            .Connexion {
-              display: block;
-              margin-bottom: 20px;
-            }
-
             .menu_item {
               a,
               .menu_item_mobile {
                 font-size: 28px;
                 margin: 10px 0;
+              }
+            }
+            .Connexion {
+              width: 100%;
+              display: block;
+              margin-bottom: 20px;
+
+              a {
+                font-size: 18px;
+                margin: 0;
+                color: white;
               }
             }
           }

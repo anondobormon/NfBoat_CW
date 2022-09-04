@@ -69,3 +69,20 @@
     }
   }
 }
+@media screen and (max-width: 758px) {
+  .tenant-card {
+    .grid_col_2 {
+      grid-template-columns: 1fr;
+
+      .card {
+        padding: 60px 25px 64px;
+        border-radius: 20px;
+
+        .button {
+          width: 100%;
+          text-align: center;
+        }
+      }
+    }
+  }
+}

@@ -107,3 +107,20 @@
     }
   }
 }
+
+@media screen and (max-width: 758px) {
+  .hero {
+    .hero_content {
+      .left {
+        .discover_area {
+          flex-direction: column;
+
+          .button {
+            width: 100%;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}

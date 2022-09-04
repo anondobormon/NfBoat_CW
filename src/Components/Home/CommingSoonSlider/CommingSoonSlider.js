@@ -18,50 +18,50 @@ export default function CommingSoonSlider() {
       <div className="container">
         <div className="slider_module">
           <div className="left">
-            <div>
-              <p>Bientôt disponible sur l&#x27;Apple Store et le Play Store</p>
-              <h2>Votre compagnon digital de navigation</h2>
-            </div>
+            <p>Bientôt disponible sur l&#x27;Apple Store et le Play Store</p>
+            <h2>Votre compagnon digital de navigation</h2>
           </div>
           <div>
             <div className="right">
               <div className="iphone_hand">
                 <img src={images.IPhoneX_hand} alt="" />
               </div>
-              <Swiper
-                slidesPerView={1}
-                effect={"fade"}
-                spaceBetween={20}
-                centeredSlides={true}
-                loop={true}
-                autoplay={{
-                  delay: 2500,
-                }}
-                modules={[Autoplay]}
-                className="mySwiper"
-              >
-                <SwiperSlide>
-                  <div className="wallet_card">
-                    <div className="image_wrapper">
-                      <img src={images.slide1} alt="" />
+              <div className="flip_box">
+                <Swiper
+                  slidesPerView={1}
+                  effect={"fade"}
+                  spaceBetween={20}
+                  centeredSlides={true}
+                  loop={true}
+                  autoplay={{
+                    delay: 2500,
+                  }}
+                  modules={[Autoplay]}
+                  className="mySwiper"
+                >
+                  <SwiperSlide>
+                    <div className="wallet_card">
+                      <div className="image_wrapper">
+                        <img src={images.slide1} alt="" />
+                      </div>
                     </div>
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="wallet_card">
-                    <div className="image_wrapper">
-                      <img src={images.slide2} alt="" />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="wallet_card">
+                      <div className="image_wrapper">
+                        <img src={images.slide2} alt="" />
+                      </div>
                     </div>
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="wallet_card">
-                    <div className="image_wrapper">
-                      <img src={images.slide3} alt="" />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="wallet_card">
+                      <div className="image_wrapper">
+                        <img src={images.slide3} alt="" />
+                      </div>
                     </div>
-                  </div>
-                </SwiperSlide>
-              </Swiper>
+                  </SwiperSlide>
+                </Swiper>
+              </div>
             </div>
           </div>
         </div>

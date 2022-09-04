@@ -1,5 +1,6 @@
 import React from "react";
 import { Fade } from "react-reveal";
+import { Link } from "react-router-dom";
 import { images } from "../../../Assets/Assets";
 import Footer from "../../Layout/Footer/Footer";
 import Navbar from "../../Layout/Navbar/Navbar";
@@ -234,8 +235,12 @@ export default function HomeV2() {
                   </div>
                 </div>
 
-                <button className="button reserved">Réserver</button>
-                <button className="button contact">Contacter</button>
+                <button className="button reserved">
+                  <Link to="#">Réserver</Link>
+                </button>
+                <button className="button contact">
+                  <Link to="#">Contacter</Link>
+                </button>
                 <p className="text-center">
                   Aucun montant ne vous sera débité pour le moment
                 </p>

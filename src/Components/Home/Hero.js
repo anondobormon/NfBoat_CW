@@ -20,10 +20,10 @@ export default function Hero() {
               </p>
 
               <div className="discover_area">
-                <Link to="/" className="button discover">
+                <Link to="/wallet-nfcard" className="button discover">
                   Découvrir
                 </Link>
-                <Link to="/" className="button rent">
+                <Link to="/recherche" className="button rent">
                   Louer un bateau
                 </Link>
               </div>

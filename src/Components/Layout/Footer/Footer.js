@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Fade from "react-reveal/Fade";
+import { Link } from "react-router-dom";
 import { images } from "../../../Assets/Assets";
 import "./Footer.scss";
 
@@ -34,16 +35,30 @@ export default function Footer() {
               <div className="social_icons">
                 <ul>
                   <li>
-                    <i className="fa-brands fa-facebook-f"></i>
+                    <a href="https://www.facebook.com/NFBoat" target="_blank">
+                      <i className="fa-brands fa-facebook-f"></i>{" "}
+                    </a>
                   </li>
                   <li>
-                    <i className="fa-brands fa-twitter"></i>
+                    <a href="https://twitter.com/nf_boat" target="_blank">
+                      <i className="fa-brands fa-twitter"></i>{" "}
+                    </a>
                   </li>
                   <li>
-                    <i className="fa-brands fa-instagram"></i>
+                    <a
+                      href="https://www.instagram.com/nfboat_off/?hl=fr"
+                      target="_blank"
+                    >
+                      <i className="fa-brands fa-instagram"></i>
+                    </a>
                   </li>
                   <li>
-                    <i className="fa-brands fa-linkedin-in"></i>
+                    <a
+                      href="https://www.linkedin.com/company/nfboat/"
+                      target="_blank"
+                    >
+                      <i className="fa-brands fa-linkedin-in"></i>
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -84,9 +99,15 @@ export default function Footer() {
             <div className="left">
               <p>Plus d'informations</p>
               <ul>
-                <li>Contact</li>
-                <li>Politique de confidentialité</li>
-                <li>Termes et conditions</li>
+                <Link to="/contact">
+                  <li>Contact</li>
+                </Link>
+                <Link to="/politique-de-confidentialite">
+                  <li>Politique de confidentialité</li>{" "}
+                </Link>
+                <Link to="/termes-conditions">
+                  <li>Termes et conditions</li>{" "}
+                </Link>
               </ul>
             </div>
             <div className="right">

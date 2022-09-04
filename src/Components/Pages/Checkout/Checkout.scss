@@ -116,14 +116,21 @@
     }
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 758px) {
   .checkout {
     .address {
       flex-direction: column;
 
       .input {
-        width: 100%;
+        max-width: 100% !important;
       }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .checkout {
+    .address {
+      flex-direction: column;
     }
   }
 }

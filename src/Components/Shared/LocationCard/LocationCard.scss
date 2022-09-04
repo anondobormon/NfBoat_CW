@@ -9,7 +9,7 @@
   cursor: pointer;
 
   .left {
-    width: 410px;
+    max-width: 410px;
     height: 255px;
     border-radius: 20px;
     position: relative;
@@ -18,6 +18,8 @@
     align-items: center;
     justify-content: center;
     transition: all 0.3s;
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
 
     .sale_button {
       position: absolute;
@@ -33,10 +35,13 @@
       line-height: 1.375em;
       font-weight: 700;
     }
-
-    img {
-      height: 260px;
-      transition: all 0.3s;
+    .image_wrapper {
+      width: 100%;
+      overflow: hidden;
+      img {
+        height: 260px;
+        transition: all 0.3s;
+      }
     }
   }
 
@@ -105,9 +110,6 @@
     box-shadow: 0 1px 6px 0 rgb(20 20 43 / 15%);
 
     .left {
-      border-bottom-right-radius: 0px;
-      border-top-right-radius: 0px;
-
       img {
         scale: 1.07;
       }
@@ -125,16 +127,18 @@
   .location_card {
     flex-direction: column;
     align-items: flex-start;
-    width: 410px;
+    max-width: 410px;
     margin: 0 auto;
 
     .left {
-      border-bottom-right-radius: 0px;
+      width: 100%;
+      height: 200px;
+      border-top-right-radius: 24px;
       border-bottom-left-radius: 0px;
     }
 
     .right {
-      width: 410px;
+      width: 100%;
     }
   }
 }

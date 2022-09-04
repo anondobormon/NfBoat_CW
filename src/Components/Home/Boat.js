@@ -1,5 +1,6 @@
 import React from "react";
 import { Fade, Zoom } from "react-reveal";
+import { Link } from "react-router-dom";
 import { images } from "../../Assets/Assets";
 import TenantCard from "../Shared/TenantCard/TenantCard";
 import "./Boat.scss";
@@ -58,7 +59,9 @@ export default function Boat() {
 
         <div className="demander">
           <Zoom>
-            <button className="button">Demander ma NFCard</button>
+            <Link to="/wallet-nfcard" className="button">
+              Demander ma NFCard
+            </Link>
           </Zoom>
         </div>
 

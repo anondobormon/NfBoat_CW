@@ -1,5 +1,6 @@
 import React from "react";
 import { Fade } from "react-reveal";
+import { Link } from "react-router-dom";
 import Footer from "../../Layout/Footer/Footer";
 import Navbar from "../../Layout/Navbar/Navbar";
 import MetaData from "../../Utils/MetaData";
@@ -90,7 +91,9 @@ export default function DetailsProduct() {
                 </p>
 
                 <div className="amount">199,00€</div>
-                <button className="button">Procéder au paiement</button>
+                <button className="button">
+                  <Link to="/product-details">Procéder au paiement</Link>
+                </button>
               </div>
             </Fade>
           </div>

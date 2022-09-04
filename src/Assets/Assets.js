@@ -11,6 +11,7 @@ import Heart_filled from "./images/ant-design_heart-filled.svg";
 import Star_filled from "./images/ant-design_star-filled.svg";
 import Apple_icon from "./images/Apple-Icon.svg";
 import Apple_iPhone_11 from "./images/Apple-iPhone-11-Pro-Space-Grey-1.png";
+import Boat_section from "./images/Boat-section-1.png";
 import Star from "./images/bxs_star.svg";
 import bx_id_card from "./images/bx_id-card.png";
 import Bx_store from "./images/bx_store.svg";
@@ -77,6 +78,7 @@ import Boat1 from "./images/mdi_sail-boat-1.png";
 import Mdi_sail_boat from "./images/mdi_sail-boat.png";
 import Boat4 from "./images/mdi_sail-boat_1.png";
 import Nft from "./images/nft_1nft.png";
+import Publier_img from "./images/Publier-annonce1.png";
 import Rectangle_516_1 from "./images/Rectangle-516-1.jpg";
 import Rectangle_516_2 from "./images/Rectangle-516-2.jpg";
 import Rectangle_516_3 from "./images/Rectangle-516-3.jpg";
@@ -105,6 +107,8 @@ export const images = {
   Search_boat: Search_boat,
   Apple_iPhone_11: Apple_iPhone_11,
   Nft: Nft,
+  Publier_img: Publier_img,
+  Boat_section: Boat_section,
   Home12: Home12,
   Home1_1: Home1_1,
   Document_icon: Document_icon,

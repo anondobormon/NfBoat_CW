@@ -102,7 +102,9 @@ export default function Contact() {
 
                     <div className="divider"></div>
 
-                    <p className="email">contact@nfboat.com</p>
+                    <a className="email" href="mailto:contact@nfboat.com">
+                      contact@nfboat.com
+                    </a>
                   </div>
                 </Fade>
                 <Fade delay={300} bottom>
@@ -119,7 +121,9 @@ export default function Contact() {
 
                     <div className="divider"></div>
 
-                    <p className="email">contact@nfboat.com</p>
+                    <a className="email" href="tel:+33661559780">
+                      +33 6 61 55 97 80
+                    </a>
                   </div>
                 </Fade>
               </div>
@@ -135,18 +139,26 @@ export default function Contact() {
                 <p>Nous vous répondrons via nos réseaux sociaux</p>
                 <div className="social_icons">
                   <ul>
-                    <li>
-                      <i className="fa-brands fa-facebook-f"></i>
-                    </li>
-                    <li>
-                      <i className="fa-brands fa-twitter"></i>
-                    </li>
-                    <li>
-                      <i className="fa-brands fa-instagram"></i>
-                    </li>
-                    <li>
-                      <i className="fa-brands fa-linkedin-in"></i>
-                    </li>
+                    <a href="https://www.facebook.com/">
+                      <li>
+                        <i className="fa-brands fa-facebook-f"></i>
+                      </li>
+                    </a>
+                    <a href="https://twitter.com/">
+                      <li>
+                        <i className="fa-brands fa-twitter"></i>
+                      </li>
+                    </a>
+                    <a href="https://www.instagram.com/">
+                      <li>
+                        <i className="fa-brands fa-instagram"></i>
+                      </li>
+                    </a>
+                    <a href="https://www.linkedin.com/">
+                      <li>
+                        <i className="fa-brands fa-linkedin-in"></i>
+                      </li>
+                    </a>
                   </ul>
                 </div>
               </div>

@@ -48,7 +48,7 @@ const BoatData = [
 
 export default function Recherche() {
   const [showModal, setShowModal] = useState(false);
-  const [value, setValue] = useState(dayjs());
+  const [value, setValue] = useState(null);
 
   return (
     <div className="recherche_de_ports">
@@ -85,14 +85,19 @@ export default function Recherche() {
                 </span>
                 <div className="details_element">Ville ou Port</div>
               </div>
-              <div className="item">
+              <div className="item date42">
                 <span className="icon">
                   <i className="fa-solid fa-calendar-days"></i>
                 </span>
+                <p>{value == null && "Sélectionner une date"}</p>
                 <LocalizationProvider dateAdapter={AdapterDayjs}>
                   <MobileDatePicker
                     value={value}
+                    keyboard
+                    placeholder="MM/DD/YYYY"
+                    format={"MM/DD/YYYY"}
                     minDate={dayjs("2017-01-01")}
+                    toolbarTitle="Select Date"
                     onChange={(newValue) => {
                       setValue(newValue);
                     }}

@@ -2,6 +2,7 @@ import React from "react";
 import Footer from "../../Layout/Footer/Footer";
 import Navbar from "../../Layout/Navbar/Navbar";
 import MetaData from "../../Utils/MetaData";
+import "./TermesConditions.scss";
 
 export default function TermesConditions() {
   return (

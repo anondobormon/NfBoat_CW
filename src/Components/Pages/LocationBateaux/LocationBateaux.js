@@ -14,7 +14,7 @@ import MetaData from "../../Utils/MetaData";
 import "./LocationBateaux.scss";
 
 export default function LocationBateaux() {
-  const [value, setValue] = useState(dayjs());
+  const [value, setValue] = useState(null);
 
   return (
     <div className="location_bateaux">
@@ -37,8 +37,12 @@ export default function LocationBateaux() {
                   indispensable
                 </p>
 
-                <button className="button">Explorer</button>
-                <button className="button">Nos offres</button>
+                <button className="button">
+                  <Link to="/recherche">Explorer</Link>
+                </button>
+                <button className="button">
+                  <Link to="/">Nos offres</Link>
+                </button>
               </div>
             </Fade>
           </div>
@@ -66,20 +70,27 @@ export default function LocationBateaux() {
               </span>
               <div className="details_element">Ville ou Port</div>
             </div>
-            <div className="item">
+            <div className="item date42">
               <span className="icon">
                 <i className="fa-solid fa-calendar-days"></i>
               </span>
+
+              <p>{value == null && "Sélectionner une date"}</p>
               <LocalizationProvider dateAdapter={AdapterDayjs}>
                 <MobileDatePicker
                   value={value}
+                  keyboard
+                  placeholder="MM/DD/YYYY"
+                  format={"MM/DD/YYYY"}
                   minDate={dayjs("2017-01-01")}
+                  toolbarTitle="Select Date"
                   onChange={(newValue) => {
                     setValue(newValue);
                   }}
                   renderInput={(params) => <TextField {...params} />}
                 />
               </LocalizationProvider>
+
               <span className="arrow_icon">
                 <i className="fa-solid fa-angle-right"></i>
               </span>
@@ -159,16 +170,14 @@ export default function LocationBateaux() {
         <TenantCard />
       </div>
 
-      <div className="space125"></div>
+      <div className="space100"></div>
       <hr />
-      <div className="space200"></div>
+      <div className="space100"></div>
       {/* Services */}
       <div className="container-medium-886px">
         <div className="services">
           <Fade bottom>
-            <h2>
-              Découvrez nos <br /> services uniques
-            </h2>
+            <h2>Découvrez nos services uniques</h2>
           </Fade>
           <Fade bottom delay={100}>
             <p>
@@ -192,7 +201,9 @@ export default function LocationBateaux() {
           <div className="space50"></div>
           <div className="learn_more">
             <Fade delay={100}>
-              <button className="button button_black">En savoir plus</button>
+              <button className="button button_black">
+                <Link to="/a-props">En savoir plus</Link>
+              </button>
             </Fade>
           </div>
         </div>

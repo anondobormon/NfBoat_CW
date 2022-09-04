@@ -100,3 +100,27 @@
     }
   }
 }
+@media screen and (max-width: 992px) {
+  .error_wrapper {
+    display: flex;
+    flex-direction: column !important;
+    padding: 0 30px 30px 30px !important;
+
+    img {
+      width: 65% !important;
+    }
+    .title {
+      font-size: 24px !important;
+      text-align: center;
+    }
+    .button_area {
+      display: flex;
+      flex-direction: column;
+    }
+    form {
+      input {
+        width: 100% !important;
+      }
+    }
+  }
+}

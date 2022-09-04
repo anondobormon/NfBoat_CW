@@ -35,7 +35,7 @@ export default function Navbar() {
               </li>
 
               <li className="menu_item dropdown">
-                <Link to="/">
+                <Link to="#">
                   Informations
                   <span>
                     <i className="fa-solid fa-chevron-down"></i>
@@ -81,7 +81,7 @@ export default function Navbar() {
                     <Link to="/wallet">Wallet</Link>
                   </li>
                   <li className="menu_item">
-                    <Link to="/message">Messages</Link>
+                    <Link to="/messages">Messages</Link>
                   </li>
                   <li className="menu_item">
                     <Link to="/loc-et-reservations">Réservations</Link>
@@ -146,7 +146,9 @@ export default function Navbar() {
                   )}
 
                   <li className="menu_item">
-                    <button className="button Connexion">Connexion</button>
+                    <button className="button button_black Connexion">
+                      <Link to="/join-us">Connexion</Link>
+                    </button>
                   </li>
                 </ul>
               </Fade>
@@ -189,7 +191,9 @@ export default function Navbar() {
             </div>
 
             <div className="search_button">
-              <button className="button">Connexion</button>
+              <button className="button">
+                <Link to="/join-us">Connexion</Link>
+              </button>
             </div>
           </div>
         </div>

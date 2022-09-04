@@ -5,7 +5,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 30px 0 0 0;
+    padding: 30px 30px 0 30px;
 
     h3 {
       color: #222222;
@@ -36,6 +36,12 @@
 
       &:hover {
         color: #222222;
+      }
+    }
+    .button_small {
+      a {
+        color: #fff;
+        text-decoration: none;
       }
     }
 
@@ -109,6 +115,9 @@
   }
   .card_details {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     max-width: 950px;
     .close_icon {
       top: 0;
@@ -203,6 +212,7 @@
           display: flex;
           justify-content: space-between;
           padding: 20px 20px 10px 20px;
+          gap: 30px;
           border-bottom: 1px solid #b7b7b76d;
 
           p {
@@ -225,6 +235,16 @@
           transform: translateY(-5px);
           box-shadow: 0 3px 20px 0 rgb(8 15 52 / 10%);
         }
+      }
+    }
+
+    .button {
+      padding: 12px 46px !important;
+      font-size: 15px;
+      font-weight: 500;
+
+      a {
+        color: white !important;
       }
     }
   }
@@ -429,6 +449,44 @@
         grid-template-columns: 1fr;
         align-items: center;
         justify-content: center;
+      }
+    }
+    .wallet_card {
+      width: 300px;
+      height: 190px;
+      .content_wrapper {
+        div {
+          font-size: 14px;
+        }
+        .gray_title {
+          font-size: 18px;
+        }
+      }
+    }
+    .wallet_card_details {
+      height: 180px !important;
+      width: 290px !important;
+
+      img {
+        max-width: 32px !important;
+      }
+      .content_wrapper {
+        div {
+          font-size: 14px;
+        }
+        .gray_title {
+          font-size: 18px;
+        }
+      }
+    }
+    .wallet_content_wrapper {
+      .divider {
+        width: 300px;
+      }
+      .swiper {
+        max-width: 300px;
+        height: auto;
+        padding: 10px;
       }
     }
   }

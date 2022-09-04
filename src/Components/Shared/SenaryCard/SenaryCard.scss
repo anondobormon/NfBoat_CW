@@ -50,7 +50,17 @@
           overflow: hidden;
           max-height: 390px;
           position: relative;
-          padding: 35px;
+          padding: 30px;
+
+          .fixed_img {
+            position: absolute;
+            width: 100%;
+            left: 0;
+            top: 0;
+            z-index: 1;
+            // height: 300px;
+            padding: 30px;
+          }
 
           .overlay {
             position: absolute;
@@ -58,7 +68,7 @@
             top: auto;
             right: 0%;
             bottom: 0%;
-            z-index: 2;
+            z-index: 22;
             height: 30%;
             background-image: -webkit-gradient(
               linear,
@@ -81,6 +91,7 @@
             height: 100%;
             overflow: hidden;
             position: absolute;
+            z-index: 11;
 
             img {
               width: 100%;
@@ -103,6 +114,25 @@
     .navigate {
       .grid_col_2 {
         grid-template-columns: 1fr !important;
+
+        .item {
+          max-width: 500px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 479px) {
+  .navigate_senary {
+    .navigate {
+      padding: 0px 20px;
+
+      .img_wrapper {
+        padding: 23px !important;
+
+        .fixed_img {
+          padding: 20px !important;
+        }
       }
     }
   }

@@ -33,5 +33,19 @@
 @media screen and (max-width: 992px) {
   .sub_header {
     height: 288px;
+
+    h2 {
+      font-size: 40px !important;
+    }
+  }
+}
+@media screen and (max-width: 758px) {
+  .sub_header {
+    .sub_header_wrapper {
+      padding: 0;
+    }
+    h2 {
+      font-size: 32px !important;
+    }
   }
 }

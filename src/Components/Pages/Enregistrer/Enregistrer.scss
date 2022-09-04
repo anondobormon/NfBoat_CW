@@ -124,6 +124,12 @@
   .enregistrer,
   .join-us,
   .publier_une_annonce {
+    h2 {
+      font-size: 32px;
+    }
+    .header {
+      padding-top: 50px;
+    }
     .grid_col_2 {
       .wrapper {
         form {
@@ -132,6 +138,15 @@
           }
         }
       }
+    }
+  }
+}
+@media screen and (max-width: 429px) {
+  .enregistrer,
+  .join-us,
+  .publier_une_annonce {
+    .checkbox_wrapper {
+      grid-template-columns: 1fr;
     }
   }
 }

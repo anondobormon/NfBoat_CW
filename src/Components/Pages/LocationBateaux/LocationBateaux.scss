@@ -1,5 +1,6 @@
 .location_bateaux,
-.recherche_de_ports {
+.recherche_de_ports,
+.port_booking {
   .module {
     background-image: url(../../../Assets/images/bg-landing.jpg);
     background-color: #0099c2;
@@ -43,7 +44,14 @@
           &:hover {
             background-color: white;
             scale: 0.96;
-            color: #000;
+            a {
+              color: #000;
+            }
+            &:nth-last-child(2) {
+              a {
+                color: #0099c2;
+              }
+            }
           }
         }
         .button:nth-child(2) {
@@ -65,6 +73,27 @@
       flex-wrap: wrap;
       gap: 15px;
 
+      .date42 {
+        // width: 350px;
+        position: relative;
+        p {
+          top: 50%;
+          left: 40px;
+          line-height: 1.1;
+          padding-top: 20px;
+          height: 70px;
+          transform: translateY(-50%);
+          z-index: -1;
+          width: 150px;
+          position: absolute;
+          display: inline-block;
+        }
+        div {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
       .item {
         border: 1px solid white;
         display: flex;
@@ -144,6 +173,9 @@
 
         &:hover {
           scale: 0.96;
+          a {
+            color: #000;
+          }
         }
       }
     }
@@ -183,6 +215,8 @@
       margin-bottom: 16px;
       text-align: center;
       line-height: 1.375em;
+      max-width: 300px;
+      margin: 20px auto;
     }
 
     p {
@@ -207,7 +241,6 @@
           margin: 0;
           margin-top: 13px;
           font-weight: 600;
-          font-size: 22px;
           color: #222223;
         }
       }
@@ -224,37 +257,50 @@
   }
 }
 
-.MuiDialogContent-root {
-  .css-j7qwjs {
-    .css-1v994a0 {
-      font-size: 15px;
-    }
-  }
-}
-
-.css-1d3z3hw-MuiOutlinedInput-notchedOutline {
-  border: none !important;
-}
-.css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
-  width: 150px !important;
-}
-.css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
-  padding: 0 0 !important;
-  height: 20px !important;
-  transition: all 0.3s;
-}
-
 @media screen and (max-width: 992px) {
-  .location_bateaux {
+  .location_bateaux,
+  .recherche_de_ports,
+  .port_booking {
     .grid_col_3 {
       grid-template-columns: 1fr 1fr;
+    }
+    .services {
+      h2 {
+        font-size: 24px !important;
+      }
+      p {
+        text-align: center;
+      }
     }
   }
 }
 @media screen and (max-width: 758px) {
-  .location_bateaux {
+  .location_bateaux,
+  .recherche_de_ports,
+  .port_booking {
     .grid_col_3 {
-      grid-template-columns: 1fr;
+      grid-template-columns: 1fr !important;
+    }
+    .grid_col_2 {
+      grid-template-columns: 1fr !important;
+    }
+    .boat_search-area {
+      .search_items {
+        flex-direction: column;
+        .date42 {
+          p {
+            // width: 100%;
+            width: 180px;
+            margin-top: 5px;
+            margin-left: 25px;
+            padding: auto 0;
+          }
+        }
+        .item {
+          width: 100%;
+          justify-content: space-between;
+        }
+      }
     }
   }
 }

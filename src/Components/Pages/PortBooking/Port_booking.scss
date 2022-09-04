@@ -2,15 +2,13 @@
   .booking_header {
     max-width: 1400px;
     margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 
     h2 {
       color: #222223;
       font-size: 32px;
       line-height: 1.375em;
       font-weight: 600;
+      text-align: center;
     }
 
     .search {

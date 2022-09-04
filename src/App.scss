@@ -64,7 +64,7 @@ a {
 .button {
   margin-top: 0px;
   background-color: #0099c2;
-  padding: 17px 35px;
+  padding: 17px 29px;
   border-radius: 12px;
   border: none;
   cursor: pointer;
@@ -72,6 +72,10 @@ a {
   font-weight: 600;
   color: #fff;
   transition: color 300ms ease;
+
+  a {
+    color: white;
+  }
 }
 .button_small {
   margin-top: 0px;
@@ -84,6 +88,9 @@ a {
   font-weight: 500;
   color: #fff;
   transition: color 300ms ease;
+  a {
+    color: white;
+  }
 }
 
 .button_black {
@@ -242,6 +249,7 @@ h4 {
 }
 
 .toggle_two_btn {
+  margin-top: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -324,6 +332,29 @@ h4 {
   margin-top: 10px;
 }
 
+@media screen and (max-width: 479px) {
+  .container {
+    padding-right: 20px !important;
+    padding-left: 20px !important;
+  }
+  .container-1179px {
+    padding-right: 20px !important;
+    padding-left: 20px !important;
+  }
+  .container-medium-712px {
+    padding-right: 20px !important;
+    padding-left: 20px !important;
+  }
+}
+@media screen and (max-width: 758px) {
+  .toggle_two_btn {
+    flex-direction: column;
+
+    .button {
+      width: 100%;
+    }
+  }
+}
 @media screen and (max-width: 992px) {
   .container {
     padding-right: 30px;
@@ -337,5 +368,19 @@ h4 {
   }
   .wrapper {
     padding: 74px 0px;
+  }
+  h3 {
+    font-size: 20px !important;
+  }
+  h2 {
+    font-weight: 40px !important;
+  }
+  .success {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .success-message-text {
+      text-align: center;
+    }
   }
 }

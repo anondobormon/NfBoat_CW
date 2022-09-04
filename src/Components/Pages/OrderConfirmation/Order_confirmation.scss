@@ -104,7 +104,11 @@
     .client_info {
       .wrapper_left {
         width: 100%;
-
+        .module3 {
+          .left {
+            flex-direction: column;
+          }
+        }
         .module {
           flex-direction: column;
           width: 100%;

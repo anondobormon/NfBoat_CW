@@ -9,7 +9,7 @@ export default function SubHeaderLink({ mon, link }) {
       <Fade>
         <ul>
           <li>
-            <Link to={`/`}>Mon compte</Link>{" "}
+            <Link to={`/mon-compte`}>Mon compte</Link>{" "}
             <span>
               <i className="fa-solid fa-chevron-right"></i>
             </span>

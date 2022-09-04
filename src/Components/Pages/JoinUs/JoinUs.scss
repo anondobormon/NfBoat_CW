@@ -23,8 +23,14 @@
 
 @media screen and (max-width: 992px) {
   .join_us_section {
+    .header {
+      padding-top: 30px;
+    }
+    h2 {
+      font-size: 32px;
+    }
     .wrapper2 {
-      padding: 0 !important;
+      padding: 20px 20px !important;
     }
   }
 }
